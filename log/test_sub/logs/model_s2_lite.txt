@@ -1,0 +1,2392 @@
+2023-05-11 18:01:40,226 - Model - INFO - PARAMETER ...
+2023-05-11 18:01:40,226 - Model - INFO - Namespace(batch_size=64, model='model_s2_lite', epoch=100, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='test_sub', decay_rate=0.0001, step_size=10, lr_decay=0.9)
+2023-05-11 18:01:40,227 - Model - INFO - Load dataset ...
+2023-05-11 18:01:41,719 - Model - INFO - No existing model, starting training from scratch...
+2023-05-11 18:01:41,719 - Model - INFO - Start training...
+2023-05-11 18:01:41,719 - Model - INFO - Epoch 1 (1/100):
+2023-05-11 18:04:40,684 - Model - INFO - PARAMETER ...
+2023-05-11 18:04:40,684 - Model - INFO - Namespace(batch_size=64, model='model_s2_lite', epoch=100, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='test_sub', decay_rate=0.0001, step_size=10, lr_decay=0.9)
+2023-05-11 18:04:40,684 - Model - INFO - Load dataset ...
+2023-05-11 18:04:46,295 - Model - INFO - No existing model, starting training from scratch...
+2023-05-11 18:04:46,295 - Model - INFO - Start training...
+2023-05-11 18:04:50,395 - Model - INFO - Epoch 1 (1/100):
+2023-05-11 18:05:31,459 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:05:31,468 - Model - INFO - Train loss: 0.83197
+2023-05-11 18:05:31,468 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.7482 |recall  0.8492 |F1 score  0.7955 |
+|class  2 piece |weight  0.312040|precision  0.5478 |recall  0.5765 |F1 score  0.5618 |
+|class  3 piece |weight  0.104932|precision  0.6602 |recall  0.3625 |F1 score  0.4680 |
+|class  4 piece |weight  0.021052|precision  0.1111 |recall  0.0001 |F1 score  0.0002 |
+|class  5 piece |weight  0.011774|precision  0.0041 |recall  0.0001 |F1 score  0.0002 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:05:31,468 - Model - INFO - weighted precision: 0.67584
+2023-05-11 18:05:31,468 - Model - INFO - Save model...
+2023-05-11 18:05:31,469 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:05:31,507 - Model - INFO - Epoch 2 (2/100):
+2023-05-11 18:05:53,406 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:05:53,406 - Model - INFO - Train loss: 0.64210
+2023-05-11 18:05:53,406 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.8360 |recall  0.9129 |F1 score  0.8728 |
+|class  2 piece |weight  0.312040|precision  0.6797 |recall  0.7258 |F1 score  0.7020 |
+|class  3 piece |weight  0.104932|precision  0.6565 |recall  0.4746 |F1 score  0.5509 |
+|class  4 piece |weight  0.021052|precision  0.2530 |recall  0.0228 |F1 score  0.0419 |
+|class  5 piece |weight  0.011774|precision  0.3194 |recall  0.0043 |F1 score  0.0084 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:05:53,406 - Model - INFO - weighted precision: 0.76908
+2023-05-11 18:05:53,406 - Model - INFO - Save model...
+2023-05-11 18:05:53,407 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:05:53,456 - Model - INFO - Epoch 3 (3/100):
+2023-05-11 18:06:15,344 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:06:15,344 - Model - INFO - Train loss: 0.55415
+2023-05-11 18:06:15,345 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.8718 |recall  0.9448 |F1 score  0.9069 |
+|class  2 piece |weight  0.312040|precision  0.7451 |recall  0.7785 |F1 score  0.7614 |
+|class  3 piece |weight  0.104932|precision  0.6788 |recall  0.5553 |F1 score  0.6109 |
+|class  4 piece |weight  0.021052|precision  0.2874 |recall  0.0383 |F1 score  0.0675 |
+|class  5 piece |weight  0.011774|precision  0.2835 |recall  0.0234 |F1 score  0.0432 |
+|class  6 piece |weight  0.006039|precision  0.1429 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:06:15,345 - Model - INFO - weighted precision: 0.81173
+2023-05-11 18:06:15,345 - Model - INFO - Save model...
+2023-05-11 18:06:15,345 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:06:15,392 - Model - INFO - Epoch 4 (4/100):
+2023-05-11 18:06:37,414 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:06:37,414 - Model - INFO - Train loss: 0.51891
+2023-05-11 18:06:37,415 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.8859 |recall  0.9513 |F1 score  0.9175 |
+|class  2 piece |weight  0.312040|precision  0.7664 |recall  0.8035 |F1 score  0.7845 |
+|class  3 piece |weight  0.104932|precision  0.6924 |recall  0.5885 |F1 score  0.6363 |
+|class  4 piece |weight  0.021052|precision  0.3234 |recall  0.0516 |F1 score  0.0890 |
+|class  5 piece |weight  0.011774|precision  0.2875 |recall  0.0312 |F1 score  0.0564 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:06:37,415 - Model - INFO - weighted precision: 0.82692
+2023-05-11 18:06:37,415 - Model - INFO - Save model...
+2023-05-11 18:06:37,415 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:06:37,463 - Model - INFO - Epoch 5 (5/100):
+2023-05-11 18:06:58,944 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:06:58,944 - Model - INFO - Train loss: 0.49717
+2023-05-11 18:06:58,945 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.8938 |recall  0.9539 |F1 score  0.9229 |
+|class  2 piece |weight  0.312040|precision  0.7791 |recall  0.8162 |F1 score  0.7972 |
+|class  3 piece |weight  0.104932|precision  0.6972 |recall  0.6144 |F1 score  0.6532 |
+|class  4 piece |weight  0.021052|precision  0.3402 |recall  0.0612 |F1 score  0.1038 |
+|class  5 piece |weight  0.011774|precision  0.2953 |recall  0.0343 |F1 score  0.0615 |
+|class  6 piece |weight  0.006039|precision  0.3333 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:06:58,945 - Model - INFO - weighted precision: 0.83522
+2023-05-11 18:06:58,945 - Model - INFO - Save model...
+2023-05-11 18:06:58,945 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:06:58,993 - Model - INFO - Epoch 6 (6/100):
+2023-05-11 18:07:21,380 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:07:21,380 - Model - INFO - Train loss: 0.48417
+2023-05-11 18:07:21,380 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.8983 |recall  0.9566 |F1 score  0.9266 |
+|class  2 piece |weight  0.312040|precision  0.7890 |recall  0.8231 |F1 score  0.8057 |
+|class  3 piece |weight  0.104932|precision  0.7011 |recall  0.6302 |F1 score  0.6638 |
+|class  4 piece |weight  0.021052|precision  0.3613 |recall  0.0722 |F1 score  0.1203 |
+|class  5 piece |weight  0.011774|precision  0.2984 |recall  0.0436 |F1 score  0.0761 |
+|class  6 piece |weight  0.006039|precision  0.1250 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:07:21,381 - Model - INFO - weighted precision: 0.84084
+2023-05-11 18:07:21,381 - Model - INFO - Save model...
+2023-05-11 18:07:21,381 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:07:21,423 - Model - INFO - Epoch 7 (7/100):
+2023-05-11 18:07:43,499 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:07:43,507 - Model - INFO - Train loss: 0.47311
+2023-05-11 18:07:43,508 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9024 |recall  0.9582 |F1 score  0.9295 |
+|class  2 piece |weight  0.312040|precision  0.7945 |recall  0.8285 |F1 score  0.8111 |
+|class  3 piece |weight  0.104932|precision  0.7032 |recall  0.6429 |F1 score  0.6717 |
+|class  4 piece |weight  0.021052|precision  0.3793 |recall  0.0793 |F1 score  0.1312 |
+|class  5 piece |weight  0.011774|precision  0.2934 |recall  0.0423 |F1 score  0.0739 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:07:43,508 - Model - INFO - weighted precision: 0.84486
+2023-05-11 18:07:43,508 - Model - INFO - Save model...
+2023-05-11 18:07:43,508 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:07:43,546 - Model - INFO - Epoch 8 (8/100):
+2023-05-11 18:08:05,528 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:08:05,528 - Model - INFO - Train loss: 0.46376
+2023-05-11 18:08:05,529 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9056 |recall  0.9591 |F1 score  0.9316 |
+|class  2 piece |weight  0.312040|precision  0.8002 |recall  0.8337 |F1 score  0.8166 |
+|class  3 piece |weight  0.104932|precision  0.7063 |recall  0.6545 |F1 score  0.6794 |
+|class  4 piece |weight  0.021052|precision  0.3789 |recall  0.0836 |F1 score  0.1370 |
+|class  5 piece |weight  0.011774|precision  0.2974 |recall  0.0490 |F1 score  0.0842 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:08:05,529 - Model - INFO - weighted precision: 0.84834
+2023-05-11 18:08:05,529 - Model - INFO - Save model...
+2023-05-11 18:08:05,529 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:08:05,578 - Model - INFO - Epoch 9 (9/100):
+2023-05-11 18:08:27,988 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:08:27,988 - Model - INFO - Train loss: 0.45700
+2023-05-11 18:08:27,989 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9078 |recall  0.9606 |F1 score  0.9334 |
+|class  2 piece |weight  0.312040|precision  0.8046 |recall  0.8375 |F1 score  0.8207 |
+|class  3 piece |weight  0.104932|precision  0.7085 |recall  0.6626 |F1 score  0.6848 |
+|class  4 piece |weight  0.021052|precision  0.3892 |recall  0.0835 |F1 score  0.1376 |
+|class  5 piece |weight  0.011774|precision  0.2954 |recall  0.0499 |F1 score  0.0854 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:08:27,989 - Model - INFO - weighted precision: 0.85117
+2023-05-11 18:08:27,989 - Model - INFO - Save model...
+2023-05-11 18:08:27,989 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:08:28,026 - Model - INFO - Epoch 10 (10/100):
+2023-05-11 18:08:50,137 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:08:50,137 - Model - INFO - Train loss: 0.45355
+2023-05-11 18:08:50,137 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9093 |recall  0.9606 |F1 score  0.9342 |
+|class  2 piece |weight  0.312040|precision  0.8062 |recall  0.8385 |F1 score  0.8220 |
+|class  3 piece |weight  0.104932|precision  0.7086 |recall  0.6689 |F1 score  0.6882 |
+|class  4 piece |weight  0.021052|precision  0.3908 |recall  0.0878 |F1 score  0.1434 |
+|class  5 piece |weight  0.011774|precision  0.3094 |recall  0.0523 |F1 score  0.0895 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:08:50,137 - Model - INFO - weighted precision: 0.85229
+2023-05-11 18:08:50,138 - Model - INFO - Save model...
+2023-05-11 18:08:50,138 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:08:50,184 - Model - INFO - Epoch 11 (11/100):
+2023-05-11 18:09:12,199 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:09:12,200 - Model - INFO - Train loss: 0.44464
+2023-05-11 18:09:12,200 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9121 |recall  0.9616 |F1 score  0.9362 |
+|class  2 piece |weight  0.312040|precision  0.8111 |recall  0.8435 |F1 score  0.8270 |
+|class  3 piece |weight  0.104932|precision  0.7120 |recall  0.6786 |F1 score  0.6949 |
+|class  4 piece |weight  0.021052|precision  0.3989 |recall  0.0924 |F1 score  0.1500 |
+|class  5 piece |weight  0.011774|precision  0.3039 |recall  0.0543 |F1 score  0.0922 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:09:12,201 - Model - INFO - weighted precision: 0.85553
+2023-05-11 18:09:12,201 - Model - INFO - Save model...
+2023-05-11 18:09:12,201 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:09:12,248 - Model - INFO - Epoch 12 (12/100):
+2023-05-11 18:09:34,452 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:09:34,452 - Model - INFO - Train loss: 0.44111
+2023-05-11 18:09:34,453 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9134 |recall  0.9622 |F1 score  0.9372 |
+|class  2 piece |weight  0.312040|precision  0.8130 |recall  0.8466 |F1 score  0.8295 |
+|class  3 piece |weight  0.104932|precision  0.7139 |recall  0.6808 |F1 score  0.6969 |
+|class  4 piece |weight  0.021052|precision  0.4096 |recall  0.0944 |F1 score  0.1534 |
+|class  5 piece |weight  0.011774|precision  0.3127 |recall  0.0567 |F1 score  0.0961 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:09:34,453 - Model - INFO - weighted precision: 0.85711
+2023-05-11 18:09:34,453 - Model - INFO - Save model...
+2023-05-11 18:09:34,453 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:09:34,501 - Model - INFO - Epoch 13 (13/100):
+2023-05-11 18:09:56,658 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:09:56,659 - Model - INFO - Train loss: 0.43580
+2023-05-11 18:09:56,660 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9152 |recall  0.9630 |F1 score  0.9385 |
+|class  2 piece |weight  0.312040|precision  0.8161 |recall  0.8488 |F1 score  0.8321 |
+|class  3 piece |weight  0.104932|precision  0.7147 |recall  0.6881 |F1 score  0.7011 |
+|class  4 piece |weight  0.021052|precision  0.4094 |recall  0.0954 |F1 score  0.1548 |
+|class  5 piece |weight  0.011774|precision  0.3094 |recall  0.0558 |F1 score  0.0946 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:09:56,660 - Model - INFO - weighted precision: 0.85901
+2023-05-11 18:09:56,660 - Model - INFO - Save model...
+2023-05-11 18:09:56,660 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:09:56,708 - Model - INFO - Epoch 14 (14/100):
+2023-05-11 18:10:18,812 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:10:18,813 - Model - INFO - Train loss: 0.43282
+2023-05-11 18:10:18,813 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9163 |recall  0.9634 |F1 score  0.9393 |
+|class  2 piece |weight  0.312040|precision  0.8179 |recall  0.8505 |F1 score  0.8339 |
+|class  3 piece |weight  0.104932|precision  0.7148 |recall  0.6913 |F1 score  0.7029 |
+|class  4 piece |weight  0.021052|precision  0.4173 |recall  0.0977 |F1 score  0.1583 |
+|class  5 piece |weight  0.011774|precision  0.2975 |recall  0.0556 |F1 score  0.0937 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:10:18,813 - Model - INFO - weighted precision: 0.86013
+2023-05-11 18:10:18,813 - Model - INFO - Save model...
+2023-05-11 18:10:18,813 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:10:18,861 - Model - INFO - Epoch 15 (15/100):
+2023-05-11 18:10:41,203 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:10:41,212 - Model - INFO - Train loss: 0.43068
+2023-05-11 18:10:41,212 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9169 |recall  0.9636 |F1 score  0.9397 |
+|class  2 piece |weight  0.312040|precision  0.8192 |recall  0.8515 |F1 score  0.8350 |
+|class  3 piece |weight  0.104932|precision  0.7162 |recall  0.6938 |F1 score  0.7049 |
+|class  4 piece |weight  0.021052|precision  0.4154 |recall  0.0985 |F1 score  0.1593 |
+|class  5 piece |weight  0.011774|precision  0.3180 |recall  0.0639 |F1 score  0.1064 |
+|class  6 piece |weight  0.006039|precision  1.0000 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:10:41,212 - Model - INFO - weighted precision: 0.86091
+2023-05-11 18:10:41,212 - Model - INFO - Save model...
+2023-05-11 18:10:41,212 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:10:41,279 - Model - INFO - Epoch 16 (16/100):
+2023-05-11 18:11:03,343 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:11:03,343 - Model - INFO - Train loss: 0.42809
+2023-05-11 18:11:03,343 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9177 |recall  0.9637 |F1 score  0.9402 |
+|class  2 piece |weight  0.312040|precision  0.8203 |recall  0.8524 |F1 score  0.8361 |
+|class  3 piece |weight  0.104932|precision  0.7159 |recall  0.6971 |F1 score  0.7064 |
+|class  4 piece |weight  0.021052|precision  0.4226 |recall  0.0993 |F1 score  0.1608 |
+|class  5 piece |weight  0.011774|precision  0.3121 |recall  0.0626 |F1 score  0.1043 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:11:03,343 - Model - INFO - weighted precision: 0.86163
+2023-05-11 18:11:03,344 - Model - INFO - Save model...
+2023-05-11 18:11:03,344 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:11:03,392 - Model - INFO - Epoch 17 (17/100):
+2023-05-11 18:11:25,508 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:11:25,508 - Model - INFO - Train loss: 0.42586
+2023-05-11 18:11:25,508 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9181 |recall  0.9646 |F1 score  0.9408 |
+|class  2 piece |weight  0.312040|precision  0.8227 |recall  0.8537 |F1 score  0.8379 |
+|class  3 piece |weight  0.104932|precision  0.7189 |recall  0.6992 |F1 score  0.7089 |
+|class  4 piece |weight  0.021052|precision  0.4261 |recall  0.1050 |F1 score  0.1684 |
+|class  5 piece |weight  0.011774|precision  0.3169 |recall  0.0643 |F1 score  0.1068 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:11:25,508 - Model - INFO - weighted precision: 0.86287
+2023-05-11 18:11:25,509 - Model - INFO - Save model...
+2023-05-11 18:11:25,509 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:11:25,580 - Model - INFO - Epoch 18 (18/100):
+2023-05-11 18:11:47,899 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:11:47,899 - Model - INFO - Train loss: 0.42328
+2023-05-11 18:11:47,899 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9195 |recall  0.9644 |F1 score  0.9414 |
+|class  2 piece |weight  0.312040|precision  0.8228 |recall  0.8557 |F1 score  0.8389 |
+|class  3 piece |weight  0.104932|precision  0.7200 |recall  0.7028 |F1 score  0.7113 |
+|class  4 piece |weight  0.021052|precision  0.4235 |recall  0.1012 |F1 score  0.1633 |
+|class  5 piece |weight  0.011774|precision  0.3225 |recall  0.0679 |F1 score  0.1121 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:11:47,899 - Model - INFO - weighted precision: 0.86371
+2023-05-11 18:11:47,900 - Model - INFO - Save model...
+2023-05-11 18:11:47,900 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:11:47,947 - Model - INFO - Epoch 19 (19/100):
+2023-05-11 18:12:09,977 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:12:09,977 - Model - INFO - Train loss: 0.42187
+2023-05-11 18:12:09,977 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9197 |recall  0.9650 |F1 score  0.9418 |
+|class  2 piece |weight  0.312040|precision  0.8245 |recall  0.8559 |F1 score  0.8399 |
+|class  3 piece |weight  0.104932|precision  0.7196 |recall  0.7041 |F1 score  0.7118 |
+|class  4 piece |weight  0.021052|precision  0.4334 |recall  0.1065 |F1 score  0.1709 |
+|class  5 piece |weight  0.011774|precision  0.3142 |recall  0.0655 |F1 score  0.1083 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:12:09,977 - Model - INFO - weighted precision: 0.86432
+2023-05-11 18:12:09,977 - Model - INFO - Save model...
+2023-05-11 18:12:09,977 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:12:10,024 - Model - INFO - Epoch 20 (20/100):
+2023-05-11 18:12:32,124 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:12:32,124 - Model - INFO - Train loss: 0.42093
+2023-05-11 18:12:32,125 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9200 |recall  0.9650 |F1 score  0.9420 |
+|class  2 piece |weight  0.312040|precision  0.8248 |recall  0.8570 |F1 score  0.8406 |
+|class  3 piece |weight  0.104932|precision  0.7208 |recall  0.7045 |F1 score  0.7126 |
+|class  4 piece |weight  0.021052|precision  0.4290 |recall  0.1042 |F1 score  0.1677 |
+|class  5 piece |weight  0.011774|precision  0.3171 |recall  0.0666 |F1 score  0.1100 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:12:32,125 - Model - INFO - weighted precision: 0.86469
+2023-05-11 18:12:32,125 - Model - INFO - Save model...
+2023-05-11 18:12:32,125 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:12:32,172 - Model - INFO - Epoch 21 (21/100):
+2023-05-11 18:12:54,286 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:12:54,294 - Model - INFO - Train loss: 0.41446
+2023-05-11 18:12:54,294 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9217 |recall  0.9658 |F1 score  0.9433 |
+|class  2 piece |weight  0.312040|precision  0.8286 |recall  0.8595 |F1 score  0.8437 |
+|class  3 piece |weight  0.104932|precision  0.7224 |recall  0.7131 |F1 score  0.7177 |
+|class  4 piece |weight  0.021052|precision  0.4291 |recall  0.1054 |F1 score  0.1693 |
+|class  5 piece |weight  0.011774|precision  0.3332 |recall  0.0727 |F1 score  0.1193 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:12:54,294 - Model - INFO - weighted precision: 0.86688
+2023-05-11 18:12:54,294 - Model - INFO - Save model...
+2023-05-11 18:12:54,295 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:12:54,334 - Model - INFO - Epoch 22 (22/100):
+2023-05-11 18:13:16,322 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:13:16,331 - Model - INFO - Train loss: 0.41370
+2023-05-11 18:13:16,331 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9224 |recall  0.9657 |F1 score  0.9436 |
+|class  2 piece |weight  0.312040|precision  0.8282 |recall  0.8611 |F1 score  0.8443 |
+|class  3 piece |weight  0.104932|precision  0.7220 |recall  0.7116 |F1 score  0.7168 |
+|class  4 piece |weight  0.021052|precision  0.4296 |recall  0.1032 |F1 score  0.1664 |
+|class  5 piece |weight  0.011774|precision  0.3323 |recall  0.0730 |F1 score  0.1197 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:13:16,331 - Model - INFO - weighted precision: 0.86711
+2023-05-11 18:13:16,331 - Model - INFO - Save model...
+2023-05-11 18:13:16,331 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:13:16,371 - Model - INFO - Epoch 23 (23/100):
+2023-05-11 18:13:38,744 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:13:38,745 - Model - INFO - Train loss: 0.41108
+2023-05-11 18:13:38,745 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9226 |recall  0.9662 |F1 score  0.9439 |
+|class  2 piece |weight  0.312040|precision  0.8301 |recall  0.8608 |F1 score  0.8452 |
+|class  3 piece |weight  0.104932|precision  0.7230 |recall  0.7158 |F1 score  0.7194 |
+|class  4 piece |weight  0.021052|precision  0.4376 |recall  0.1086 |F1 score  0.1741 |
+|class  5 piece |weight  0.011774|precision  0.3262 |recall  0.0718 |F1 score  0.1176 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:13:38,745 - Model - INFO - weighted precision: 0.86785
+2023-05-11 18:13:38,745 - Model - INFO - Save model...
+2023-05-11 18:13:38,745 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:13:38,793 - Model - INFO - Epoch 24 (24/100):
+2023-05-11 18:14:00,847 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:14:00,847 - Model - INFO - Train loss: 0.40960
+2023-05-11 18:14:00,847 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9234 |recall  0.9663 |F1 score  0.9444 |
+|class  2 piece |weight  0.312040|precision  0.8302 |recall  0.8621 |F1 score  0.8458 |
+|class  3 piece |weight  0.104932|precision  0.7229 |recall  0.7151 |F1 score  0.7190 |
+|class  4 piece |weight  0.021052|precision  0.4378 |recall  0.1095 |F1 score  0.1752 |
+|class  5 piece |weight  0.011774|precision  0.3229 |recall  0.0729 |F1 score  0.1189 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:14:00,847 - Model - INFO - weighted precision: 0.86825
+2023-05-11 18:14:00,848 - Model - INFO - Save model...
+2023-05-11 18:14:00,848 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:14:00,898 - Model - INFO - Epoch 25 (25/100):
+2023-05-11 18:14:22,979 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:14:22,980 - Model - INFO - Train loss: 0.40874
+2023-05-11 18:14:22,980 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9236 |recall  0.9662 |F1 score  0.9444 |
+|class  2 piece |weight  0.312040|precision  0.8312 |recall  0.8626 |F1 score  0.8466 |
+|class  3 piece |weight  0.104932|precision  0.7243 |recall  0.7181 |F1 score  0.7212 |
+|class  4 piece |weight  0.021052|precision  0.4402 |recall  0.1135 |F1 score  0.1804 |
+|class  5 piece |weight  0.011774|precision  0.3169 |recall  0.0707 |F1 score  0.1157 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:14:22,980 - Model - INFO - weighted precision: 0.86873
+2023-05-11 18:14:22,980 - Model - INFO - Save model...
+2023-05-11 18:14:22,981 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:14:23,029 - Model - INFO - Epoch 26 (26/100):
+2023-05-11 18:14:45,093 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:14:45,093 - Model - INFO - Train loss: 0.40704
+2023-05-11 18:14:45,093 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9245 |recall  0.9664 |F1 score  0.9450 |
+|class  2 piece |weight  0.312040|precision  0.8316 |recall  0.8640 |F1 score  0.8475 |
+|class  3 piece |weight  0.104932|precision  0.7240 |recall  0.7180 |F1 score  0.7210 |
+|class  4 piece |weight  0.021052|precision  0.4317 |recall  0.1109 |F1 score  0.1764 |
+|class  5 piece |weight  0.011774|precision  0.3284 |recall  0.0744 |F1 score  0.1213 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:14:45,094 - Model - INFO - weighted precision: 0.86928
+2023-05-11 18:14:45,094 - Model - INFO - Save model...
+2023-05-11 18:14:45,094 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:14:45,141 - Model - INFO - Epoch 27 (27/100):
+2023-05-11 18:15:07,592 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:15:07,592 - Model - INFO - Train loss: 0.40669
+2023-05-11 18:15:07,592 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9239 |recall  0.9665 |F1 score  0.9447 |
+|class  2 piece |weight  0.312040|precision  0.8321 |recall  0.8642 |F1 score  0.8479 |
+|class  3 piece |weight  0.104932|precision  0.7264 |recall  0.7190 |F1 score  0.7227 |
+|class  4 piece |weight  0.021052|precision  0.4400 |recall  0.1119 |F1 score  0.1784 |
+|class  5 piece |weight  0.011774|precision  0.3245 |recall  0.0728 |F1 score  0.1189 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:15:07,593 - Model - INFO - weighted precision: 0.86947
+2023-05-11 18:15:07,593 - Model - INFO - Save model...
+2023-05-11 18:15:07,593 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:15:07,641 - Model - INFO - Epoch 28 (28/100):
+2023-05-11 18:15:29,919 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:15:29,919 - Model - INFO - Train loss: 0.40572
+2023-05-11 18:15:29,919 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9242 |recall  0.9665 |F1 score  0.9449 |
+|class  2 piece |weight  0.312040|precision  0.8327 |recall  0.8641 |F1 score  0.8481 |
+|class  3 piece |weight  0.104932|precision  0.7273 |recall  0.7216 |F1 score  0.7244 |
+|class  4 piece |weight  0.021052|precision  0.4328 |recall  0.1104 |F1 score  0.1759 |
+|class  5 piece |weight  0.011774|precision  0.3313 |recall  0.0806 |F1 score  0.1296 |
+|class  6 piece |weight  0.006039|precision  0.1667 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:15:29,919 - Model - INFO - weighted precision: 0.86977
+2023-05-11 18:15:29,920 - Model - INFO - Save model...
+2023-05-11 18:15:29,920 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:15:29,968 - Model - INFO - Epoch 29 (29/100):
+2023-05-11 18:15:53,233 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:15:53,241 - Model - INFO - Train loss: 0.40485
+2023-05-11 18:15:53,242 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9248 |recall  0.9669 |F1 score  0.9454 |
+|class  2 piece |weight  0.312040|precision  0.8339 |recall  0.8651 |F1 score  0.8492 |
+|class  3 piece |weight  0.104932|precision  0.7272 |recall  0.7231 |F1 score  0.7251 |
+|class  4 piece |weight  0.021052|precision  0.4302 |recall  0.1125 |F1 score  0.1784 |
+|class  5 piece |weight  0.011774|precision  0.3393 |recall  0.0756 |F1 score  0.1236 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:15:53,242 - Model - INFO - weighted precision: 0.87048
+2023-05-11 18:15:53,242 - Model - INFO - Save model...
+2023-05-11 18:15:53,242 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:15:53,279 - Model - INFO - Epoch 30 (30/100):
+2023-05-11 18:16:15,513 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:16:15,513 - Model - INFO - Train loss: 0.40406
+2023-05-11 18:16:15,513 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9252 |recall  0.9667 |F1 score  0.9455 |
+|class  2 piece |weight  0.312040|precision  0.8337 |recall  0.8648 |F1 score  0.8490 |
+|class  3 piece |weight  0.104932|precision  0.7255 |recall  0.7244 |F1 score  0.7249 |
+|class  4 piece |weight  0.021052|precision  0.4373 |recall  0.1130 |F1 score  0.1796 |
+|class  5 piece |weight  0.011774|precision  0.3263 |recall  0.0760 |F1 score  0.1233 |
+|class  6 piece |weight  0.006039|precision  0.3333 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:16:15,514 - Model - INFO - weighted precision: 0.87038
+2023-05-11 18:16:15,514 - Model - INFO - Save model...
+2023-05-11 18:16:15,514 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:16:15,565 - Model - INFO - Epoch 31 (31/100):
+2023-05-11 18:16:37,723 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:16:37,724 - Model - INFO - Train loss: 0.40053
+2023-05-11 18:16:37,725 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9259 |recall  0.9673 |F1 score  0.9462 |
+|class  2 piece |weight  0.312040|precision  0.8351 |recall  0.8670 |F1 score  0.8508 |
+|class  3 piece |weight  0.104932|precision  0.7289 |recall  0.7249 |F1 score  0.7269 |
+|class  4 piece |weight  0.021052|precision  0.4383 |recall  0.1177 |F1 score  0.1856 |
+|class  5 piece |weight  0.011774|precision  0.3446 |recall  0.0786 |F1 score  0.1280 |
+|class  6 piece |weight  0.006039|precision  0.2000 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:16:37,725 - Model - INFO - weighted precision: 0.87164
+2023-05-11 18:16:37,726 - Model - INFO - Save model...
+2023-05-11 18:16:37,726 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:16:37,774 - Model - INFO - Epoch 32 (32/100):
+2023-05-11 18:16:59,936 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:16:59,937 - Model - INFO - Train loss: 0.39850
+2023-05-11 18:16:59,937 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9266 |recall  0.9675 |F1 score  0.9466 |
+|class  2 piece |weight  0.312040|precision  0.8365 |recall  0.8682 |F1 score  0.8521 |
+|class  3 piece |weight  0.104932|precision  0.7298 |recall  0.7280 |F1 score  0.7289 |
+|class  4 piece |weight  0.021052|precision  0.4464 |recall  0.1202 |F1 score  0.1894 |
+|class  5 piece |weight  0.011774|precision  0.3341 |recall  0.0777 |F1 score  0.1261 |
+|class  6 piece |weight  0.006039|precision  0.1667 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:16:59,937 - Model - INFO - weighted precision: 0.87248
+2023-05-11 18:16:59,937 - Model - INFO - Save model...
+2023-05-11 18:16:59,937 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:17:00,012 - Model - INFO - Epoch 33 (33/100):
+2023-05-11 18:17:22,659 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:17:22,659 - Model - INFO - Train loss: 0.39709
+2023-05-11 18:17:22,659 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9268 |recall  0.9675 |F1 score  0.9467 |
+|class  2 piece |weight  0.312040|precision  0.8367 |recall  0.8684 |F1 score  0.8523 |
+|class  3 piece |weight  0.104932|precision  0.7305 |recall  0.7293 |F1 score  0.7299 |
+|class  4 piece |weight  0.021052|precision  0.4348 |recall  0.1175 |F1 score  0.1850 |
+|class  5 piece |weight  0.011774|precision  0.3382 |recall  0.0795 |F1 score  0.1287 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:17:22,659 - Model - INFO - weighted precision: 0.87262
+2023-05-11 18:17:22,660 - Model - INFO - Save model...
+2023-05-11 18:17:22,660 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:17:22,708 - Model - INFO - Epoch 34 (34/100):
+2023-05-11 18:17:46,842 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:17:46,842 - Model - INFO - Train loss: 0.39643
+2023-05-11 18:17:46,842 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9271 |recall  0.9678 |F1 score  0.9470 |
+|class  2 piece |weight  0.312040|precision  0.8379 |recall  0.8687 |F1 score  0.8530 |
+|class  3 piece |weight  0.104932|precision  0.7295 |recall  0.7306 |F1 score  0.7300 |
+|class  4 piece |weight  0.021052|precision  0.4476 |recall  0.1211 |F1 score  0.1906 |
+|class  5 piece |weight  0.011774|precision  0.3378 |recall  0.0801 |F1 score  0.1295 |
+|class  6 piece |weight  0.006039|precision  0.1111 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:17:46,842 - Model - INFO - weighted precision: 0.87310
+2023-05-11 18:17:46,843 - Model - INFO - Save model...
+2023-05-11 18:17:46,843 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:17:46,892 - Model - INFO - Epoch 35 (35/100):
+2023-05-11 18:18:09,864 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:18:09,864 - Model - INFO - Train loss: 0.39469
+2023-05-11 18:18:09,864 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9277 |recall  0.9680 |F1 score  0.9475 |
+|class  2 piece |weight  0.312040|precision  0.8380 |recall  0.8707 |F1 score  0.8540 |
+|class  3 piece |weight  0.104932|precision  0.7316 |recall  0.7297 |F1 score  0.7306 |
+|class  4 piece |weight  0.021052|precision  0.4420 |recall  0.1192 |F1 score  0.1877 |
+|class  5 piece |weight  0.011774|precision  0.3320 |recall  0.0792 |F1 score  0.1279 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:18:09,864 - Model - INFO - weighted precision: 0.87369
+2023-05-11 18:18:09,864 - Model - INFO - Save model...
+2023-05-11 18:18:09,864 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:18:09,912 - Model - INFO - Epoch 36 (36/100):
+2023-05-11 18:18:33,420 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:18:33,421 - Model - INFO - Train loss: 0.39464
+2023-05-11 18:18:33,421 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9277 |recall  0.9679 |F1 score  0.9474 |
+|class  2 piece |weight  0.312040|precision  0.8381 |recall  0.8703 |F1 score  0.8539 |
+|class  3 piece |weight  0.104932|precision  0.7312 |recall  0.7299 |F1 score  0.7306 |
+|class  4 piece |weight  0.021052|precision  0.4471 |recall  0.1228 |F1 score  0.1926 |
+|class  5 piece |weight  0.011774|precision  0.3369 |recall  0.0796 |F1 score  0.1288 |
+|class  6 piece |weight  0.006039|precision  0.1000 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:18:33,421 - Model - INFO - weighted precision: 0.87364
+2023-05-11 18:18:33,421 - Model - INFO - Save model...
+2023-05-11 18:18:33,421 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:18:33,470 - Model - INFO - Epoch 37 (37/100):
+2023-05-11 18:18:56,952 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:18:56,952 - Model - INFO - Train loss: 0.39365
+2023-05-11 18:18:56,952 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9280 |recall  0.9678 |F1 score  0.9475 |
+|class  2 piece |weight  0.312040|precision  0.8386 |recall  0.8705 |F1 score  0.8542 |
+|class  3 piece |weight  0.104932|precision  0.7321 |recall  0.7328 |F1 score  0.7325 |
+|class  4 piece |weight  0.021052|precision  0.4463 |recall  0.1235 |F1 score  0.1935 |
+|class  5 piece |weight  0.011774|precision  0.3524 |recall  0.0856 |F1 score  0.1377 |
+|class  6 piece |weight  0.006039|precision  0.1429 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:18:56,952 - Model - INFO - weighted precision: 0.87401
+2023-05-11 18:18:56,952 - Model - INFO - Save model...
+2023-05-11 18:18:56,952 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:18:56,990 - Model - INFO - Epoch 38 (38/100):
+2023-05-11 18:19:20,980 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:19:20,980 - Model - INFO - Train loss: 0.39387
+2023-05-11 18:19:20,981 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9279 |recall  0.9681 |F1 score  0.9476 |
+|class  2 piece |weight  0.312040|precision  0.8382 |recall  0.8708 |F1 score  0.8542 |
+|class  3 piece |weight  0.104932|precision  0.7328 |recall  0.7308 |F1 score  0.7318 |
+|class  4 piece |weight  0.021052|precision  0.4497 |recall  0.1264 |F1 score  0.1973 |
+|class  5 piece |weight  0.011774|precision  0.3439 |recall  0.0785 |F1 score  0.1279 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:19:20,981 - Model - INFO - weighted precision: 0.87401
+2023-05-11 18:19:20,981 - Model - INFO - Save model...
+2023-05-11 18:19:20,982 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:19:21,019 - Model - INFO - Epoch 39 (39/100):
+2023-05-11 18:19:44,886 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:19:44,887 - Model - INFO - Train loss: 0.39293
+2023-05-11 18:19:44,887 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9282 |recall  0.9683 |F1 score  0.9478 |
+|class  2 piece |weight  0.312040|precision  0.8391 |recall  0.8710 |F1 score  0.8548 |
+|class  3 piece |weight  0.104932|precision  0.7328 |recall  0.7322 |F1 score  0.7325 |
+|class  4 piece |weight  0.021052|precision  0.4466 |recall  0.1251 |F1 score  0.1955 |
+|class  5 piece |weight  0.011774|precision  0.3498 |recall  0.0835 |F1 score  0.1349 |
+|class  6 piece |weight  0.006039|precision  1.0000 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:19:44,887 - Model - INFO - weighted precision: 0.87437
+2023-05-11 18:19:44,887 - Model - INFO - Save model...
+2023-05-11 18:19:44,887 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:19:44,927 - Model - INFO - Epoch 40 (40/100):
+2023-05-11 18:20:07,752 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:20:07,753 - Model - INFO - Train loss: 0.39160
+2023-05-11 18:20:07,754 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9289 |recall  0.9684 |F1 score  0.9482 |
+|class  2 piece |weight  0.312040|precision  0.8391 |recall  0.8723 |F1 score  0.8554 |
+|class  3 piece |weight  0.104932|precision  0.7335 |recall  0.7326 |F1 score  0.7330 |
+|class  4 piece |weight  0.021052|precision  0.4519 |recall  0.1261 |F1 score  0.1972 |
+|class  5 piece |weight  0.011774|precision  0.3369 |recall  0.0808 |F1 score  0.1303 |
+|class  6 piece |weight  0.006039|precision  0.2308 |recall  0.0005 |F1 score  0.0011 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:20:07,754 - Model - INFO - weighted precision: 0.87484
+2023-05-11 18:20:07,754 - Model - INFO - Save model...
+2023-05-11 18:20:07,754 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:20:07,792 - Model - INFO - Epoch 41 (41/100):
+2023-05-11 18:20:30,807 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:20:30,807 - Model - INFO - Train loss: 0.38843
+2023-05-11 18:20:30,807 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9292 |recall  0.9686 |F1 score  0.9485 |
+|class  2 piece |weight  0.312040|precision  0.8417 |recall  0.8728 |F1 score  0.8570 |
+|class  3 piece |weight  0.104932|precision  0.7332 |recall  0.7379 |F1 score  0.7356 |
+|class  4 piece |weight  0.021052|precision  0.4422 |recall  0.1253 |F1 score  0.1953 |
+|class  5 piece |weight  0.011774|precision  0.3474 |recall  0.0824 |F1 score  0.1332 |
+|class  6 piece |weight  0.006039|precision  0.0714 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:20:30,807 - Model - INFO - weighted precision: 0.87567
+2023-05-11 18:20:30,807 - Model - INFO - Save model...
+2023-05-11 18:20:30,807 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:20:30,857 - Model - INFO - Epoch 42 (42/100):
+2023-05-11 18:20:53,055 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:20:53,056 - Model - INFO - Train loss: 0.38781
+2023-05-11 18:20:53,056 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9296 |recall  0.9690 |F1 score  0.9489 |
+|class  2 piece |weight  0.312040|precision  0.8417 |recall  0.8725 |F1 score  0.8568 |
+|class  3 piece |weight  0.104932|precision  0.7340 |recall  0.7375 |F1 score  0.7357 |
+|class  4 piece |weight  0.021052|precision  0.4482 |recall  0.1302 |F1 score  0.2018 |
+|class  5 piece |weight  0.011774|precision  0.3466 |recall  0.0848 |F1 score  0.1363 |
+|class  6 piece |weight  0.006039|precision  0.1250 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:20:53,056 - Model - INFO - weighted precision: 0.87588
+2023-05-11 18:20:53,056 - Model - INFO - Save model...
+2023-05-11 18:20:53,056 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:20:53,104 - Model - INFO - Epoch 43 (43/100):
+2023-05-11 18:21:15,696 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:21:15,697 - Model - INFO - Train loss: 0.38694
+2023-05-11 18:21:15,697 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9300 |recall  0.9691 |F1 score  0.9491 |
+|class  2 piece |weight  0.312040|precision  0.8419 |recall  0.8740 |F1 score  0.8577 |
+|class  3 piece |weight  0.104932|precision  0.7359 |recall  0.7378 |F1 score  0.7369 |
+|class  4 piece |weight  0.021052|precision  0.4533 |recall  0.1308 |F1 score  0.2031 |
+|class  5 piece |weight  0.011774|precision  0.3442 |recall  0.0844 |F1 score  0.1355 |
+|class  6 piece |weight  0.006039|precision  0.6667 |recall  0.0004 |F1 score  0.0007 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:21:15,697 - Model - INFO - weighted precision: 0.87645
+2023-05-11 18:21:15,697 - Model - INFO - Save model...
+2023-05-11 18:21:15,697 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:21:15,746 - Model - INFO - Epoch 44 (44/100):
+2023-05-11 18:21:37,565 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:21:37,565 - Model - INFO - Train loss: 0.38654
+2023-05-11 18:21:37,565 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9301 |recall  0.9693 |F1 score  0.9493 |
+|class  2 piece |weight  0.312040|precision  0.8431 |recall  0.8739 |F1 score  0.8582 |
+|class  3 piece |weight  0.104932|precision  0.7367 |recall  0.7411 |F1 score  0.7389 |
+|class  4 piece |weight  0.021052|precision  0.4518 |recall  0.1298 |F1 score  0.2016 |
+|class  5 piece |weight  0.011774|precision  0.3474 |recall  0.0873 |F1 score  0.1395 |
+|class  6 piece |weight  0.006039|precision  0.4000 |recall  0.0007 |F1 score  0.0014 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:21:37,565 - Model - INFO - weighted precision: 0.87690
+2023-05-11 18:21:37,566 - Model - INFO - Save model...
+2023-05-11 18:21:37,566 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:21:37,613 - Model - INFO - Epoch 45 (45/100):
+2023-05-11 18:21:59,812 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:21:59,813 - Model - INFO - Train loss: 0.38570
+2023-05-11 18:21:59,814 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9305 |recall  0.9692 |F1 score  0.9495 |
+|class  2 piece |weight  0.312040|precision  0.8426 |recall  0.8750 |F1 score  0.8585 |
+|class  3 piece |weight  0.104932|precision  0.7363 |recall  0.7388 |F1 score  0.7376 |
+|class  4 piece |weight  0.021052|precision  0.4470 |recall  0.1330 |F1 score  0.2050 |
+|class  5 piece |weight  0.011774|precision  0.3512 |recall  0.0819 |F1 score  0.1328 |
+|class  6 piece |weight  0.006039|precision  0.3636 |recall  0.0007 |F1 score  0.0014 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:21:59,814 - Model - INFO - weighted precision: 0.87694
+2023-05-11 18:21:59,814 - Model - INFO - Save model...
+2023-05-11 18:21:59,814 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:21:59,862 - Model - INFO - Epoch 46 (46/100):
+2023-05-11 18:22:22,277 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:22:22,285 - Model - INFO - Train loss: 0.38531
+2023-05-11 18:22:22,285 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9304 |recall  0.9695 |F1 score  0.9495 |
+|class  2 piece |weight  0.312040|precision  0.8434 |recall  0.8754 |F1 score  0.8591 |
+|class  3 piece |weight  0.104932|precision  0.7377 |recall  0.7399 |F1 score  0.7388 |
+|class  4 piece |weight  0.021052|precision  0.4611 |recall  0.1333 |F1 score  0.2068 |
+|class  5 piece |weight  0.011774|precision  0.3567 |recall  0.0890 |F1 score  0.1425 |
+|class  6 piece |weight  0.006039|precision  0.2000 |recall  0.0004 |F1 score  0.0007 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:22:22,286 - Model - INFO - weighted precision: 0.87741
+2023-05-11 18:22:22,286 - Model - INFO - Save model...
+2023-05-11 18:22:22,286 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:22:22,325 - Model - INFO - Epoch 47 (47/100):
+2023-05-11 18:22:44,825 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:22:44,825 - Model - INFO - Train loss: 0.38440
+2023-05-11 18:22:44,825 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9300 |recall  0.9694 |F1 score  0.9493 |
+|class  2 piece |weight  0.312040|precision  0.8435 |recall  0.8743 |F1 score  0.8586 |
+|class  3 piece |weight  0.104932|precision  0.7373 |recall  0.7399 |F1 score  0.7386 |
+|class  4 piece |weight  0.021052|precision  0.4522 |recall  0.1350 |F1 score  0.2080 |
+|class  5 piece |weight  0.011774|precision  0.3598 |recall  0.0871 |F1 score  0.1402 |
+|class  6 piece |weight  0.006039|precision  0.2143 |recall  0.0005 |F1 score  0.0011 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:22:44,825 - Model - INFO - weighted precision: 0.87707
+2023-05-11 18:22:44,826 - Model - INFO - Save model...
+2023-05-11 18:22:44,826 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:22:44,866 - Model - INFO - Epoch 48 (48/100):
+2023-05-11 18:23:06,938 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:23:06,940 - Model - INFO - Train loss: 0.38430
+2023-05-11 18:23:06,940 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9300 |recall  0.9695 |F1 score  0.9494 |
+|class  2 piece |weight  0.312040|precision  0.8439 |recall  0.8748 |F1 score  0.8590 |
+|class  3 piece |weight  0.104932|precision  0.7380 |recall  0.7400 |F1 score  0.7390 |
+|class  4 piece |weight  0.021052|precision  0.4597 |recall  0.1375 |F1 score  0.2117 |
+|class  5 piece |weight  0.011774|precision  0.3487 |recall  0.0854 |F1 score  0.1372 |
+|class  6 piece |weight  0.006039|precision  0.3333 |recall  0.0009 |F1 score  0.0018 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:23:06,940 - Model - INFO - weighted precision: 0.87731
+2023-05-11 18:23:06,940 - Model - INFO - Save model...
+2023-05-11 18:23:06,940 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:23:06,988 - Model - INFO - Epoch 49 (49/100):
+2023-05-11 18:23:29,043 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:23:29,044 - Model - INFO - Train loss: 0.38431
+2023-05-11 18:23:29,044 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9305 |recall  0.9697 |F1 score  0.9497 |
+|class  2 piece |weight  0.312040|precision  0.8438 |recall  0.8750 |F1 score  0.8591 |
+|class  3 piece |weight  0.104932|precision  0.7362 |recall  0.7389 |F1 score  0.7375 |
+|class  4 piece |weight  0.021052|precision  0.4492 |recall  0.1359 |F1 score  0.2086 |
+|class  5 piece |weight  0.011774|precision  0.3567 |recall  0.0844 |F1 score  0.1365 |
+|class  6 piece |weight  0.006039|precision  0.0714 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:23:29,044 - Model - INFO - weighted precision: 0.87732
+2023-05-11 18:23:29,045 - Model - INFO - Save model...
+2023-05-11 18:23:29,045 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:23:29,085 - Model - INFO - Epoch 50 (50/100):
+2023-05-11 18:23:51,372 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:23:51,372 - Model - INFO - Train loss: 0.38357
+2023-05-11 18:23:51,373 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9308 |recall  0.9693 |F1 score  0.9497 |
+|class  2 piece |weight  0.312040|precision  0.8435 |recall  0.8757 |F1 score  0.8593 |
+|class  3 piece |weight  0.104932|precision  0.7375 |recall  0.7396 |F1 score  0.7386 |
+|class  4 piece |weight  0.021052|precision  0.4525 |recall  0.1380 |F1 score  0.2116 |
+|class  5 piece |weight  0.011774|precision  0.3436 |recall  0.0824 |F1 score  0.1330 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:23:51,373 - Model - INFO - weighted precision: 0.87743
+2023-05-11 18:23:51,373 - Model - INFO - Save model...
+2023-05-11 18:23:51,373 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:23:51,420 - Model - INFO - Epoch 51 (51/100):
+2023-05-11 18:24:14,052 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:24:14,061 - Model - INFO - Train loss: 0.38029
+2023-05-11 18:24:14,061 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9312 |recall  0.9700 |F1 score  0.9502 |
+|class  2 piece |weight  0.312040|precision  0.8460 |recall  0.8765 |F1 score  0.8610 |
+|class  3 piece |weight  0.104932|precision  0.7386 |recall  0.7445 |F1 score  0.7415 |
+|class  4 piece |weight  0.021052|precision  0.4575 |recall  0.1407 |F1 score  0.2153 |
+|class  5 piece |weight  0.011774|precision  0.3673 |recall  0.0870 |F1 score  0.1406 |
+|class  6 piece |weight  0.006039|precision  0.2500 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:24:14,061 - Model - INFO - weighted precision: 0.87866
+2023-05-11 18:24:14,061 - Model - INFO - Save model...
+2023-05-11 18:24:14,061 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:24:14,100 - Model - INFO - Epoch 52 (52/100):
+2023-05-11 18:24:36,810 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:24:36,812 - Model - INFO - Train loss: 0.37918
+2023-05-11 18:24:36,813 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9322 |recall  0.9698 |F1 score  0.9506 |
+|class  2 piece |weight  0.312040|precision  0.8464 |recall  0.8781 |F1 score  0.8620 |
+|class  3 piece |weight  0.104932|precision  0.7386 |recall  0.7459 |F1 score  0.7422 |
+|class  4 piece |weight  0.021052|precision  0.4565 |recall  0.1378 |F1 score  0.2118 |
+|class  5 piece |weight  0.011774|precision  0.3592 |recall  0.0898 |F1 score  0.1436 |
+|class  6 piece |weight  0.006039|precision  0.3333 |recall  0.0009 |F1 score  0.0018 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:24:36,813 - Model - INFO - weighted precision: 0.87918
+2023-05-11 18:24:36,813 - Model - INFO - Save model...
+2023-05-11 18:24:36,814 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:24:36,864 - Model - INFO - Epoch 53 (53/100):
+2023-05-11 18:24:59,361 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:24:59,361 - Model - INFO - Train loss: 0.37836
+2023-05-11 18:24:59,361 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9321 |recall  0.9702 |F1 score  0.9507 |
+|class  2 piece |weight  0.312040|precision  0.8465 |recall  0.8778 |F1 score  0.8618 |
+|class  3 piece |weight  0.104932|precision  0.7394 |recall  0.7448 |F1 score  0.7421 |
+|class  4 piece |weight  0.021052|precision  0.4573 |recall  0.1430 |F1 score  0.2179 |
+|class  5 piece |weight  0.011774|precision  0.3574 |recall  0.0872 |F1 score  0.1401 |
+|class  6 piece |weight  0.006039|precision  0.0833 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:24:59,362 - Model - INFO - weighted precision: 0.87922
+2023-05-11 18:24:59,362 - Model - INFO - Save model...
+2023-05-11 18:24:59,362 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:24:59,410 - Model - INFO - Epoch 54 (54/100):
+2023-05-11 18:25:21,800 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:25:21,801 - Model - INFO - Train loss: 0.37827
+2023-05-11 18:25:21,801 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9322 |recall  0.9699 |F1 score  0.9506 |
+|class  2 piece |weight  0.312040|precision  0.8469 |recall  0.8778 |F1 score  0.8621 |
+|class  3 piece |weight  0.104932|precision  0.7382 |recall  0.7468 |F1 score  0.7425 |
+|class  4 piece |weight  0.021052|precision  0.4515 |recall  0.1406 |F1 score  0.2145 |
+|class  5 piece |weight  0.011774|precision  0.3553 |recall  0.0844 |F1 score  0.1364 |
+|class  6 piece |weight  0.006039|precision  0.0625 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:25:21,801 - Model - INFO - weighted precision: 0.87922
+2023-05-11 18:25:21,801 - Model - INFO - Save model...
+2023-05-11 18:25:21,801 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:25:21,850 - Model - INFO - Epoch 55 (55/100):
+2023-05-11 18:25:44,188 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:25:44,196 - Model - INFO - Train loss: 0.37757
+2023-05-11 18:25:44,197 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9323 |recall  0.9703 |F1 score  0.9509 |
+|class  2 piece |weight  0.312040|precision  0.8474 |recall  0.8773 |F1 score  0.8621 |
+|class  3 piece |weight  0.104932|precision  0.7391 |recall  0.7487 |F1 score  0.7438 |
+|class  4 piece |weight  0.021052|precision  0.4612 |recall  0.1419 |F1 score  0.2171 |
+|class  5 piece |weight  0.011774|precision  0.3574 |recall  0.0894 |F1 score  0.1430 |
+|class  6 piece |weight  0.006039|precision  0.6000 |recall  0.0005 |F1 score  0.0011 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:25:44,197 - Model - INFO - weighted precision: 0.87957
+2023-05-11 18:25:44,197 - Model - INFO - Save model...
+2023-05-11 18:25:44,197 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:25:44,236 - Model - INFO - Epoch 56 (56/100):
+2023-05-11 18:26:07,088 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:26:07,089 - Model - INFO - Train loss: 0.37788
+2023-05-11 18:26:07,089 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9322 |recall  0.9701 |F1 score  0.9507 |
+|class  2 piece |weight  0.312040|precision  0.8473 |recall  0.8779 |F1 score  0.8623 |
+|class  3 piece |weight  0.104932|precision  0.7397 |recall  0.7472 |F1 score  0.7434 |
+|class  4 piece |weight  0.021052|precision  0.4556 |recall  0.1441 |F1 score  0.2190 |
+|class  5 piece |weight  0.011774|precision  0.3646 |recall  0.0883 |F1 score  0.1421 |
+|class  6 piece |weight  0.006039|precision  0.5714 |recall  0.0007 |F1 score  0.0014 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:26:07,089 - Model - INFO - weighted precision: 0.87951
+2023-05-11 18:26:07,090 - Model - INFO - Epoch 57 (57/100):
+2023-05-11 18:26:29,032 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:26:29,040 - Model - INFO - Train loss: 0.37684
+2023-05-11 18:26:29,041 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9324 |recall  0.9705 |F1 score  0.9511 |
+|class  2 piece |weight  0.312040|precision  0.8470 |recall  0.8786 |F1 score  0.8625 |
+|class  3 piece |weight  0.104932|precision  0.7415 |recall  0.7459 |F1 score  0.7437 |
+|class  4 piece |weight  0.021052|precision  0.4559 |recall  0.1435 |F1 score  0.2183 |
+|class  5 piece |weight  0.011774|precision  0.3612 |recall  0.0900 |F1 score  0.1441 |
+|class  6 piece |weight  0.006039|precision  0.4167 |recall  0.0009 |F1 score  0.0018 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:26:29,041 - Model - INFO - weighted precision: 0.87980
+2023-05-11 18:26:29,041 - Model - INFO - Save model...
+2023-05-11 18:26:29,041 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:26:29,082 - Model - INFO - Epoch 58 (58/100):
+2023-05-11 18:26:51,379 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:26:51,380 - Model - INFO - Train loss: 0.37682
+2023-05-11 18:26:51,380 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9326 |recall  0.9703 |F1 score  0.9511 |
+|class  2 piece |weight  0.312040|precision  0.8479 |recall  0.8787 |F1 score  0.8630 |
+|class  3 piece |weight  0.104932|precision  0.7399 |recall  0.7490 |F1 score  0.7444 |
+|class  4 piece |weight  0.021052|precision  0.4576 |recall  0.1409 |F1 score  0.2155 |
+|class  5 piece |weight  0.011774|precision  0.3539 |recall  0.0873 |F1 score  0.1400 |
+|class  6 piece |weight  0.006039|precision  0.1429 |recall  0.0002 |F1 score  0.0004 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:26:51,381 - Model - INFO - weighted precision: 0.87998
+2023-05-11 18:26:51,381 - Model - INFO - Save model...
+2023-05-11 18:26:51,381 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:26:51,429 - Model - INFO - Epoch 59 (59/100):
+2023-05-11 18:27:14,276 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:27:14,276 - Model - INFO - Train loss: 0.37611
+2023-05-11 18:27:14,277 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9328 |recall  0.9707 |F1 score  0.9514 |
+|class  2 piece |weight  0.312040|precision  0.8481 |recall  0.8784 |F1 score  0.8630 |
+|class  3 piece |weight  0.104932|precision  0.7395 |recall  0.7476 |F1 score  0.7435 |
+|class  4 piece |weight  0.021052|precision  0.4604 |recall  0.1457 |F1 score  0.2214 |
+|class  5 piece |weight  0.011774|precision  0.3646 |recall  0.0886 |F1 score  0.1426 |
+|class  6 piece |weight  0.006039|precision  0.2857 |recall  0.0007 |F1 score  0.0014 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:27:14,277 - Model - INFO - weighted precision: 0.88011
+2023-05-11 18:27:14,277 - Model - INFO - Save model...
+2023-05-11 18:27:14,277 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:27:14,317 - Model - INFO - Epoch 60 (60/100):
+2023-05-11 18:27:36,596 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:27:36,596 - Model - INFO - Train loss: 0.37595
+2023-05-11 18:27:36,597 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9329 |recall  0.9703 |F1 score  0.9512 |
+|class  2 piece |weight  0.312040|precision  0.8481 |recall  0.8793 |F1 score  0.8634 |
+|class  3 piece |weight  0.104932|precision  0.7414 |recall  0.7482 |F1 score  0.7448 |
+|class  4 piece |weight  0.021052|precision  0.4595 |recall  0.1475 |F1 score  0.2233 |
+|class  5 piece |weight  0.011774|precision  0.3595 |recall  0.0897 |F1 score  0.1435 |
+|class  6 piece |weight  0.006039|precision  0.1429 |recall  0.0004 |F1 score  0.0007 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:27:36,597 - Model - INFO - weighted precision: 0.88029
+2023-05-11 18:27:36,597 - Model - INFO - Save model...
+2023-05-11 18:27:36,597 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:27:36,645 - Model - INFO - Epoch 61 (61/100):
+2023-05-11 18:27:59,610 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:27:59,611 - Model - INFO - Train loss: 0.37265
+2023-05-11 18:27:59,611 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9335 |recall  0.9706 |F1 score  0.9517 |
+|class  2 piece |weight  0.312040|precision  0.8495 |recall  0.8799 |F1 score  0.8645 |
+|class  3 piece |weight  0.104932|precision  0.7418 |recall  0.7533 |F1 score  0.7475 |
+|class  4 piece |weight  0.021052|precision  0.4551 |recall  0.1454 |F1 score  0.2204 |
+|class  5 piece |weight  0.011774|precision  0.3654 |recall  0.0869 |F1 score  0.1404 |
+|class  6 piece |weight  0.006039|precision  0.2273 |recall  0.0009 |F1 score  0.0018 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:27:59,611 - Model - INFO - weighted precision: 0.88109
+2023-05-11 18:27:59,612 - Model - INFO - Save model...
+2023-05-11 18:27:59,612 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:27:59,660 - Model - INFO - Epoch 62 (62/100):
+2023-05-11 18:28:21,822 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:28:21,830 - Model - INFO - Train loss: 0.37193
+2023-05-11 18:28:21,831 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9338 |recall  0.9709 |F1 score  0.9520 |
+|class  2 piece |weight  0.312040|precision  0.8503 |recall  0.8802 |F1 score  0.8650 |
+|class  3 piece |weight  0.104932|precision  0.7408 |recall  0.7534 |F1 score  0.7471 |
+|class  4 piece |weight  0.021052|precision  0.4615 |recall  0.1481 |F1 score  0.2242 |
+|class  5 piece |weight  0.011774|precision  0.3761 |recall  0.0922 |F1 score  0.1480 |
+|class  6 piece |weight  0.006039|precision  0.1875 |recall  0.0005 |F1 score  0.0011 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:28:21,831 - Model - INFO - weighted precision: 0.88143
+2023-05-11 18:28:21,831 - Model - INFO - Save model...
+2023-05-11 18:28:21,831 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:28:21,870 - Model - INFO - Epoch 63 (63/100):
+2023-05-11 18:28:44,612 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:28:44,620 - Model - INFO - Train loss: 0.37105
+2023-05-11 18:28:44,621 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9339 |recall  0.9705 |F1 score  0.9518 |
+|class  2 piece |weight  0.312040|precision  0.8499 |recall  0.8807 |F1 score  0.8650 |
+|class  3 piece |weight  0.104932|precision  0.7431 |recall  0.7530 |F1 score  0.7480 |
+|class  4 piece |weight  0.021052|precision  0.4590 |recall  0.1521 |F1 score  0.2284 |
+|class  5 piece |weight  0.011774|precision  0.3761 |recall  0.0938 |F1 score  0.1502 |
+|class  6 piece |weight  0.006039|precision  0.2609 |recall  0.0011 |F1 score  0.0022 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:28:44,621 - Model - INFO - weighted precision: 0.88146
+2023-05-11 18:28:44,621 - Model - INFO - Save model...
+2023-05-11 18:28:44,621 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:28:44,661 - Model - INFO - Epoch 64 (64/100):
+2023-05-11 18:29:06,976 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:29:06,976 - Model - INFO - Train loss: 0.37116
+2023-05-11 18:29:06,976 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9339 |recall  0.9710 |F1 score  0.9521 |
+|class  2 piece |weight  0.312040|precision  0.8508 |recall  0.8805 |F1 score  0.8654 |
+|class  3 piece |weight  0.104932|precision  0.7411 |recall  0.7532 |F1 score  0.7471 |
+|class  4 piece |weight  0.021052|precision  0.4584 |recall  0.1484 |F1 score  0.2242 |
+|class  5 piece |weight  0.011774|precision  0.3616 |recall  0.0897 |F1 score  0.1437 |
+|class  6 piece |weight  0.006039|precision  0.2778 |recall  0.0009 |F1 score  0.0018 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:29:06,976 - Model - INFO - weighted precision: 0.88157
+2023-05-11 18:29:06,977 - Model - INFO - Save model...
+2023-05-11 18:29:06,977 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:29:07,016 - Model - INFO - Epoch 65 (65/100):
+2023-05-11 18:29:29,004 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:29:29,004 - Model - INFO - Train loss: 0.37106
+2023-05-11 18:29:29,004 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9337 |recall  0.9705 |F1 score  0.9518 |
+|class  2 piece |weight  0.312040|precision  0.8500 |recall  0.8807 |F1 score  0.8651 |
+|class  3 piece |weight  0.104932|precision  0.7421 |recall  0.7533 |F1 score  0.7477 |
+|class  4 piece |weight  0.021052|precision  0.4635 |recall  0.1465 |F1 score  0.2226 |
+|class  5 piece |weight  0.011774|precision  0.3693 |recall  0.0949 |F1 score  0.1511 |
+|class  6 piece |weight  0.006039|precision  0.1429 |recall  0.0004 |F1 score  0.0007 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:29:29,005 - Model - INFO - weighted precision: 0.88139
+2023-05-11 18:29:29,005 - Model - INFO - Save model...
+2023-05-11 18:29:29,005 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:29:29,053 - Model - INFO - Epoch 66 (66/100):
+2023-05-11 18:29:51,332 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:29:51,332 - Model - INFO - Train loss: 0.36997
+2023-05-11 18:29:51,332 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9343 |recall  0.9712 |F1 score  0.9524 |
+|class  2 piece |weight  0.312040|precision  0.8517 |recall  0.8805 |F1 score  0.8658 |
+|class  3 piece |weight  0.104932|precision  0.7417 |recall  0.7558 |F1 score  0.7487 |
+|class  4 piece |weight  0.021052|precision  0.4547 |recall  0.1510 |F1 score  0.2267 |
+|class  5 piece |weight  0.011774|precision  0.3680 |recall  0.0909 |F1 score  0.1457 |
+|class  6 piece |weight  0.006039|precision  0.1875 |recall  0.0005 |F1 score  0.0011 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:29:51,333 - Model - INFO - weighted precision: 0.88202
+2023-05-11 18:29:51,333 - Model - INFO - Save model...
+2023-05-11 18:29:51,333 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:29:51,380 - Model - INFO - Epoch 67 (67/100):
+2023-05-11 18:30:14,401 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:30:14,402 - Model - INFO - Train loss: 0.36971
+2023-05-11 18:30:14,402 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9342 |recall  0.9713 |F1 score  0.9524 |
+|class  2 piece |weight  0.312040|precision  0.8513 |recall  0.8811 |F1 score  0.8659 |
+|class  3 piece |weight  0.104932|precision  0.7435 |recall  0.7552 |F1 score  0.7493 |
+|class  4 piece |weight  0.021052|precision  0.4618 |recall  0.1515 |F1 score  0.2282 |
+|class  5 piece |weight  0.011774|precision  0.3682 |recall  0.0913 |F1 score  0.1464 |
+|class  6 piece |weight  0.006039|precision  0.2857 |recall  0.0007 |F1 score  0.0014 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:30:14,402 - Model - INFO - weighted precision: 0.88218
+2023-05-11 18:30:14,402 - Model - INFO - Save model...
+2023-05-11 18:30:14,402 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:30:14,451 - Model - INFO - Epoch 68 (68/100):
+2023-05-11 18:30:36,616 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:30:36,616 - Model - INFO - Train loss: 0.36957
+2023-05-11 18:30:36,617 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9342 |recall  0.9710 |F1 score  0.9523 |
+|class  2 piece |weight  0.312040|precision  0.8510 |recall  0.8815 |F1 score  0.8660 |
+|class  3 piece |weight  0.104932|precision  0.7437 |recall  0.7548 |F1 score  0.7492 |
+|class  4 piece |weight  0.021052|precision  0.4612 |recall  0.1525 |F1 score  0.2292 |
+|class  5 piece |weight  0.011774|precision  0.3696 |recall  0.0904 |F1 score  0.1453 |
+|class  6 piece |weight  0.006039|precision  0.3750 |recall  0.0016 |F1 score  0.0032 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:30:36,617 - Model - INFO - weighted precision: 0.88212
+2023-05-11 18:30:36,617 - Model - INFO - Save model...
+2023-05-11 18:30:36,617 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:30:36,665 - Model - INFO - Epoch 69 (69/100):
+2023-05-11 18:30:59,131 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:30:59,131 - Model - INFO - Train loss: 0.36947
+2023-05-11 18:30:59,132 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9346 |recall  0.9710 |F1 score  0.9525 |
+|class  2 piece |weight  0.312040|precision  0.8510 |recall  0.8814 |F1 score  0.8660 |
+|class  3 piece |weight  0.104932|precision  0.7432 |recall  0.7555 |F1 score  0.7493 |
+|class  4 piece |weight  0.021052|precision  0.4662 |recall  0.1543 |F1 score  0.2319 |
+|class  5 piece |weight  0.011774|precision  0.3892 |recall  0.0971 |F1 score  0.1554 |
+|class  6 piece |weight  0.006039|precision  0.3750 |recall  0.0011 |F1 score  0.0022 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:30:59,132 - Model - INFO - weighted precision: 0.88231
+2023-05-11 18:30:59,132 - Model - INFO - Save model...
+2023-05-11 18:30:59,132 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:30:59,182 - Model - INFO - Epoch 70 (70/100):
+2023-05-11 18:31:21,556 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:31:21,556 - Model - INFO - Train loss: 0.36892
+2023-05-11 18:31:21,557 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9346 |recall  0.9711 |F1 score  0.9525 |
+|class  2 piece |weight  0.312040|precision  0.8512 |recall  0.8812 |F1 score  0.8659 |
+|class  3 piece |weight  0.104932|precision  0.7432 |recall  0.7554 |F1 score  0.7492 |
+|class  4 piece |weight  0.021052|precision  0.4615 |recall  0.1541 |F1 score  0.2310 |
+|class  5 piece |weight  0.011774|precision  0.3624 |recall  0.0929 |F1 score  0.1479 |
+|class  6 piece |weight  0.006039|precision  0.3846 |recall  0.0009 |F1 score  0.0018 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:31:21,557 - Model - INFO - weighted precision: 0.88219
+2023-05-11 18:31:21,557 - Model - INFO - Save model...
+2023-05-11 18:31:21,557 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:31:21,609 - Model - INFO - Epoch 71 (71/100):
+2023-05-11 18:31:44,205 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:31:44,205 - Model - INFO - Train loss: 0.36671
+2023-05-11 18:31:44,206 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9350 |recall  0.9715 |F1 score  0.9529 |
+|class  2 piece |weight  0.312040|precision  0.8529 |recall  0.8829 |F1 score  0.8676 |
+|class  3 piece |weight  0.104932|precision  0.7453 |recall  0.7569 |F1 score  0.7510 |
+|class  4 piece |weight  0.021052|precision  0.4646 |recall  0.1595 |F1 score  0.2374 |
+|class  5 piece |weight  0.011774|precision  0.3653 |recall  0.0898 |F1 score  0.1441 |
+|class  6 piece |weight  0.006039|precision  0.3600 |recall  0.0016 |F1 score  0.0032 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:31:44,206 - Model - INFO - weighted precision: 0.88318
+2023-05-11 18:31:44,206 - Model - INFO - Save model...
+2023-05-11 18:31:44,206 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:31:44,280 - Model - INFO - Epoch 72 (72/100):
+2023-05-11 18:32:06,573 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:32:06,573 - Model - INFO - Train loss: 0.36547
+2023-05-11 18:32:06,574 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9353 |recall  0.9720 |F1 score  0.9533 |
+|class  2 piece |weight  0.312040|precision  0.8536 |recall  0.8833 |F1 score  0.8682 |
+|class  3 piece |weight  0.104932|precision  0.7458 |recall  0.7564 |F1 score  0.7511 |
+|class  4 piece |weight  0.021052|precision  0.4564 |recall  0.1598 |F1 score  0.2367 |
+|class  5 piece |weight  0.011774|precision  0.3787 |recall  0.0939 |F1 score  0.1505 |
+|class  6 piece |weight  0.006039|precision  0.2857 |recall  0.0007 |F1 score  0.0014 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:32:06,574 - Model - INFO - weighted precision: 0.88361
+2023-05-11 18:32:06,574 - Model - INFO - Save model...
+2023-05-11 18:32:06,574 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:32:06,612 - Model - INFO - Epoch 73 (73/100):
+2023-05-11 18:32:29,120 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:32:29,128 - Model - INFO - Train loss: 0.36488
+2023-05-11 18:32:29,128 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9353 |recall  0.9717 |F1 score  0.9532 |
+|class  2 piece |weight  0.312040|precision  0.8532 |recall  0.8834 |F1 score  0.8681 |
+|class  3 piece |weight  0.104932|precision  0.7471 |recall  0.7579 |F1 score  0.7525 |
+|class  4 piece |weight  0.021052|precision  0.4512 |recall  0.1566 |F1 score  0.2325 |
+|class  5 piece |weight  0.011774|precision  0.3719 |recall  0.0930 |F1 score  0.1488 |
+|class  6 piece |weight  0.006039|precision  0.2500 |recall  0.0005 |F1 score  0.0011 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:32:29,128 - Model - INFO - weighted precision: 0.88355
+2023-05-11 18:32:29,129 - Model - INFO - Save model...
+2023-05-11 18:32:29,129 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:32:29,169 - Model - INFO - Epoch 74 (74/100):
+2023-05-11 18:32:51,272 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:32:51,281 - Model - INFO - Train loss: 0.36457
+2023-05-11 18:32:51,281 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9353 |recall  0.9721 |F1 score  0.9533 |
+|class  2 piece |weight  0.312040|precision  0.8535 |recall  0.8834 |F1 score  0.8682 |
+|class  3 piece |weight  0.104932|precision  0.7472 |recall  0.7574 |F1 score  0.7523 |
+|class  4 piece |weight  0.021052|precision  0.4634 |recall  0.1594 |F1 score  0.2372 |
+|class  5 piece |weight  0.011774|precision  0.3734 |recall  0.0948 |F1 score  0.1512 |
+|class  6 piece |weight  0.006039|precision  0.1111 |recall  0.0004 |F1 score  0.0007 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:32:51,281 - Model - INFO - weighted precision: 0.88378
+2023-05-11 18:32:51,282 - Model - INFO - Save model...
+2023-05-11 18:32:51,282 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:32:51,320 - Model - INFO - Epoch 75 (75/100):
+2023-05-11 18:33:13,480 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:33:13,488 - Model - INFO - Train loss: 0.36413
+2023-05-11 18:33:13,489 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9355 |recall  0.9723 |F1 score  0.9535 |
+|class  2 piece |weight  0.312040|precision  0.8541 |recall  0.8840 |F1 score  0.8688 |
+|class  3 piece |weight  0.104932|precision  0.7485 |recall  0.7577 |F1 score  0.7531 |
+|class  4 piece |weight  0.021052|precision  0.4646 |recall  0.1599 |F1 score  0.2380 |
+|class  5 piece |weight  0.011774|precision  0.3800 |recall  0.0985 |F1 score  0.1564 |
+|class  6 piece |weight  0.006039|precision  0.3333 |recall  0.0014 |F1 score  0.0029 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:33:13,489 - Model - INFO - weighted precision: 0.88419
+2023-05-11 18:33:13,489 - Model - INFO - Save model...
+2023-05-11 18:33:13,489 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:33:13,528 - Model - INFO - Epoch 76 (76/100):
+2023-05-11 18:33:36,040 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:33:36,040 - Model - INFO - Train loss: 0.36425
+2023-05-11 18:33:36,041 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9351 |recall  0.9720 |F1 score  0.9532 |
+|class  2 piece |weight  0.312040|precision  0.8539 |recall  0.8832 |F1 score  0.8683 |
+|class  3 piece |weight  0.104932|precision  0.7471 |recall  0.7579 |F1 score  0.7524 |
+|class  4 piece |weight  0.021052|precision  0.4660 |recall  0.1629 |F1 score  0.2414 |
+|class  5 piece |weight  0.011774|precision  0.3824 |recall  0.0952 |F1 score  0.1525 |
+|class  6 piece |weight  0.006039|precision  0.0909 |recall  0.0004 |F1 score  0.0007 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:33:36,041 - Model - INFO - weighted precision: 0.88378
+2023-05-11 18:33:36,041 - Model - INFO - Epoch 77 (77/100):
+2023-05-11 18:33:58,152 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:33:58,152 - Model - INFO - Train loss: 0.36372
+2023-05-11 18:33:58,153 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9356 |recall  0.9721 |F1 score  0.9535 |
+|class  2 piece |weight  0.312040|precision  0.8548 |recall  0.8835 |F1 score  0.8689 |
+|class  3 piece |weight  0.104932|precision  0.7467 |recall  0.7601 |F1 score  0.7533 |
+|class  4 piece |weight  0.021052|precision  0.4665 |recall  0.1634 |F1 score  0.2420 |
+|class  5 piece |weight  0.011774|precision  0.3723 |recall  0.0938 |F1 score  0.1499 |
+|class  6 piece |weight  0.006039|precision  0.1667 |recall  0.0005 |F1 score  0.0011 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:33:58,153 - Model - INFO - weighted precision: 0.88420
+2023-05-11 18:33:58,153 - Model - INFO - Save model...
+2023-05-11 18:33:58,153 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:33:58,200 - Model - INFO - Epoch 78 (78/100):
+2023-05-11 18:34:20,696 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:34:20,696 - Model - INFO - Train loss: 0.36358
+2023-05-11 18:34:20,696 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9360 |recall  0.9720 |F1 score  0.9536 |
+|class  2 piece |weight  0.312040|precision  0.8546 |recall  0.8839 |F1 score  0.8690 |
+|class  3 piece |weight  0.104932|precision  0.7476 |recall  0.7608 |F1 score  0.7542 |
+|class  4 piece |weight  0.021052|precision  0.4651 |recall  0.1658 |F1 score  0.2445 |
+|class  5 piece |weight  0.011774|precision  0.3744 |recall  0.0953 |F1 score  0.1519 |
+|class  6 piece |weight  0.006039|precision  0.2222 |recall  0.0004 |F1 score  0.0007 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:34:20,696 - Model - INFO - weighted precision: 0.88438
+2023-05-11 18:34:20,696 - Model - INFO - Save model...
+2023-05-11 18:34:20,697 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:34:20,745 - Model - INFO - Epoch 79 (79/100):
+2023-05-11 18:34:43,287 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:34:43,296 - Model - INFO - Train loss: 0.36291
+2023-05-11 18:34:43,296 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9363 |recall  0.9721 |F1 score  0.9538 |
+|class  2 piece |weight  0.312040|precision  0.8547 |recall  0.8842 |F1 score  0.8692 |
+|class  3 piece |weight  0.104932|precision  0.7467 |recall  0.7614 |F1 score  0.7540 |
+|class  4 piece |weight  0.021052|precision  0.4679 |recall  0.1631 |F1 score  0.2419 |
+|class  5 piece |weight  0.011774|precision  0.3923 |recall  0.0993 |F1 score  0.1585 |
+|class  6 piece |weight  0.006039|precision  0.2857 |recall  0.0011 |F1 score  0.0022 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:34:43,296 - Model - INFO - weighted precision: 0.88457
+2023-05-11 18:34:43,296 - Model - INFO - Save model...
+2023-05-11 18:34:43,296 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:34:43,336 - Model - INFO - Epoch 80 (80/100):
+2023-05-11 18:35:06,056 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:35:06,057 - Model - INFO - Train loss: 0.36307
+2023-05-11 18:35:06,057 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9360 |recall  0.9716 |F1 score  0.9534 |
+|class  2 piece |weight  0.312040|precision  0.8542 |recall  0.8837 |F1 score  0.8687 |
+|class  3 piece |weight  0.104932|precision  0.7469 |recall  0.7604 |F1 score  0.7536 |
+|class  4 piece |weight  0.021052|precision  0.4653 |recall  0.1651 |F1 score  0.2437 |
+|class  5 piece |weight  0.011774|precision  0.3806 |recall  0.1005 |F1 score  0.1590 |
+|class  6 piece |weight  0.006039|precision  0.1875 |recall  0.0005 |F1 score  0.0011 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:35:06,057 - Model - INFO - weighted precision: 0.88412
+2023-05-11 18:35:06,057 - Model - INFO - Epoch 81 (81/100):
+2023-05-11 18:35:28,124 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:35:28,125 - Model - INFO - Train loss: 0.35953
+2023-05-11 18:35:28,125 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9367 |recall  0.9725 |F1 score  0.9543 |
+|class  2 piece |weight  0.312040|precision  0.8565 |recall  0.8854 |F1 score  0.8707 |
+|class  3 piece |weight  0.104932|precision  0.7483 |recall  0.7627 |F1 score  0.7554 |
+|class  4 piece |weight  0.021052|precision  0.4656 |recall  0.1661 |F1 score  0.2448 |
+|class  5 piece |weight  0.011774|precision  0.3851 |recall  0.1016 |F1 score  0.1608 |
+|class  6 piece |weight  0.006039|precision  0.3200 |recall  0.0014 |F1 score  0.0029 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:35:28,125 - Model - INFO - weighted precision: 0.88542
+2023-05-11 18:35:28,125 - Model - INFO - Save model...
+2023-05-11 18:35:28,125 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:35:28,174 - Model - INFO - Epoch 82 (82/100):
+2023-05-11 18:35:50,710 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:35:50,719 - Model - INFO - Train loss: 0.35995
+2023-05-11 18:35:50,719 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9368 |recall  0.9724 |F1 score  0.9543 |
+|class  2 piece |weight  0.312040|precision  0.8556 |recall  0.8856 |F1 score  0.8704 |
+|class  3 piece |weight  0.104932|precision  0.7490 |recall  0.7620 |F1 score  0.7554 |
+|class  4 piece |weight  0.021052|precision  0.4672 |recall  0.1657 |F1 score  0.2446 |
+|class  5 piece |weight  0.011774|precision  0.3768 |recall  0.0983 |F1 score  0.1559 |
+|class  6 piece |weight  0.006039|precision  0.2500 |recall  0.0005 |F1 score  0.0011 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:35:50,719 - Model - INFO - weighted precision: 0.88530
+2023-05-11 18:35:50,719 - Model - INFO - Epoch 83 (83/100):
+2023-05-11 18:36:13,082 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:36:13,082 - Model - INFO - Train loss: 0.35977
+2023-05-11 18:36:13,082 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9369 |recall  0.9723 |F1 score  0.9543 |
+|class  2 piece |weight  0.312040|precision  0.8556 |recall  0.8856 |F1 score  0.8703 |
+|class  3 piece |weight  0.104932|precision  0.7481 |recall  0.7617 |F1 score  0.7548 |
+|class  4 piece |weight  0.021052|precision  0.4667 |recall  0.1661 |F1 score  0.2450 |
+|class  5 piece |weight  0.011774|precision  0.3823 |recall  0.0999 |F1 score  0.1584 |
+|class  6 piece |weight  0.006039|precision  0.2000 |recall  0.0011 |F1 score  0.0022 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:36:13,082 - Model - INFO - weighted precision: 0.88522
+2023-05-11 18:36:13,083 - Model - INFO - Epoch 84 (84/100):
+2023-05-11 18:36:35,489 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:36:35,498 - Model - INFO - Train loss: 0.35805
+2023-05-11 18:36:35,498 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9373 |recall  0.9725 |F1 score  0.9546 |
+|class  2 piece |weight  0.312040|precision  0.8569 |recall  0.8866 |F1 score  0.8715 |
+|class  3 piece |weight  0.104932|precision  0.7489 |recall  0.7637 |F1 score  0.7562 |
+|class  4 piece |weight  0.021052|precision  0.4663 |recall  0.1706 |F1 score  0.2498 |
+|class  5 piece |weight  0.011774|precision  0.3797 |recall  0.0955 |F1 score  0.1526 |
+|class  6 piece |weight  0.006039|precision  0.4000 |recall  0.0018 |F1 score  0.0036 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:36:35,498 - Model - INFO - weighted precision: 0.88591
+2023-05-11 18:36:35,499 - Model - INFO - Save model...
+2023-05-11 18:36:35,499 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:36:35,541 - Model - INFO - Epoch 85 (85/100):
+2023-05-11 18:36:58,133 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:36:58,141 - Model - INFO - Train loss: 0.35865
+2023-05-11 18:36:58,141 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9373 |recall  0.9724 |F1 score  0.9545 |
+|class  2 piece |weight  0.312040|precision  0.8562 |recall  0.8862 |F1 score  0.8710 |
+|class  3 piece |weight  0.104932|precision  0.7491 |recall  0.7634 |F1 score  0.7562 |
+|class  4 piece |weight  0.021052|precision  0.4752 |recall  0.1700 |F1 score  0.2505 |
+|class  5 piece |weight  0.011774|precision  0.3871 |recall  0.1017 |F1 score  0.1611 |
+|class  6 piece |weight  0.006039|precision  0.2000 |recall  0.0009 |F1 score  0.0018 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:36:58,141 - Model - INFO - weighted precision: 0.88578
+2023-05-11 18:36:58,142 - Model - INFO - Epoch 86 (86/100):
+2023-05-11 18:37:21,757 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:37:21,758 - Model - INFO - Train loss: 0.35829
+2023-05-11 18:37:21,758 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9371 |recall  0.9724 |F1 score  0.9544 |
+|class  2 piece |weight  0.312040|precision  0.8570 |recall  0.8864 |F1 score  0.8715 |
+|class  3 piece |weight  0.104932|precision  0.7494 |recall  0.7645 |F1 score  0.7569 |
+|class  4 piece |weight  0.021052|precision  0.4708 |recall  0.1706 |F1 score  0.2505 |
+|class  5 piece |weight  0.011774|precision  0.3838 |recall  0.0974 |F1 score  0.1553 |
+|class  6 piece |weight  0.006039|precision  0.2778 |recall  0.0009 |F1 score  0.0018 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:37:21,758 - Model - INFO - weighted precision: 0.88591
+2023-05-11 18:37:21,758 - Model - INFO - Save model...
+2023-05-11 18:37:21,758 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:37:21,825 - Model - INFO - Epoch 87 (87/100):
+2023-05-11 18:37:44,133 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:37:44,141 - Model - INFO - Train loss: 0.35777
+2023-05-11 18:37:44,141 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9374 |recall  0.9728 |F1 score  0.9547 |
+|class  2 piece |weight  0.312040|precision  0.8572 |recall  0.8857 |F1 score  0.8712 |
+|class  3 piece |weight  0.104932|precision  0.7484 |recall  0.7653 |F1 score  0.7567 |
+|class  4 piece |weight  0.021052|precision  0.4686 |recall  0.1684 |F1 score  0.2477 |
+|class  5 piece |weight  0.011774|precision  0.3852 |recall  0.1019 |F1 score  0.1612 |
+|class  6 piece |weight  0.006039|precision  0.3125 |recall  0.0009 |F1 score  0.0018 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:37:44,142 - Model - INFO - weighted precision: 0.88597
+2023-05-11 18:37:44,142 - Model - INFO - Save model...
+2023-05-11 18:37:44,142 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:37:44,181 - Model - INFO - Epoch 88 (88/100):
+2023-05-11 18:38:06,632 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:38:06,632 - Model - INFO - Train loss: 0.35790
+2023-05-11 18:38:06,633 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9377 |recall  0.9722 |F1 score  0.9546 |
+|class  2 piece |weight  0.312040|precision  0.8568 |recall  0.8870 |F1 score  0.8716 |
+|class  3 piece |weight  0.104932|precision  0.7486 |recall  0.7643 |F1 score  0.7563 |
+|class  4 piece |weight  0.021052|precision  0.4681 |recall  0.1698 |F1 score  0.2492 |
+|class  5 piece |weight  0.011774|precision  0.3906 |recall  0.1028 |F1 score  0.1628 |
+|class  6 piece |weight  0.006039|precision  0.2222 |recall  0.0004 |F1 score  0.0007 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:38:06,633 - Model - INFO - weighted precision: 0.88601
+2023-05-11 18:38:06,633 - Model - INFO - Save model...
+2023-05-11 18:38:06,633 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:38:06,681 - Model - INFO - Epoch 89 (89/100):
+2023-05-11 18:38:29,193 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:38:29,201 - Model - INFO - Train loss: 0.35714
+2023-05-11 18:38:29,201 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9374 |recall  0.9724 |F1 score  0.9546 |
+|class  2 piece |weight  0.312040|precision  0.8569 |recall  0.8863 |F1 score  0.8713 |
+|class  3 piece |weight  0.104932|precision  0.7490 |recall  0.7657 |F1 score  0.7573 |
+|class  4 piece |weight  0.021052|precision  0.4687 |recall  0.1670 |F1 score  0.2463 |
+|class  5 piece |weight  0.011774|precision  0.3826 |recall  0.1010 |F1 score  0.1598 |
+|class  6 piece |weight  0.006039|precision  0.2941 |recall  0.0009 |F1 score  0.0018 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:38:29,202 - Model - INFO - weighted precision: 0.88594
+2023-05-11 18:38:29,202 - Model - INFO - Save model...
+2023-05-11 18:38:29,202 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:38:29,242 - Model - INFO - Epoch 90 (90/100):
+2023-05-11 18:38:51,944 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:38:51,944 - Model - INFO - Train loss: 0.35734
+2023-05-11 18:38:51,945 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9374 |recall  0.9724 |F1 score  0.9546 |
+|class  2 piece |weight  0.312040|precision  0.8567 |recall  0.8862 |F1 score  0.8712 |
+|class  3 piece |weight  0.104932|precision  0.7492 |recall  0.7636 |F1 score  0.7564 |
+|class  4 piece |weight  0.021052|precision  0.4648 |recall  0.1711 |F1 score  0.2501 |
+|class  5 piece |weight  0.011774|precision  0.3757 |recall  0.1001 |F1 score  0.1581 |
+|class  6 piece |weight  0.006039|precision  0.2667 |recall  0.0007 |F1 score  0.0014 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:38:51,945 - Model - INFO - weighted precision: 0.88580
+2023-05-11 18:38:51,945 - Model - INFO - Epoch 91 (91/100):
+2023-05-11 18:39:14,497 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:39:14,498 - Model - INFO - Train loss: 0.35414
+2023-05-11 18:39:14,499 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9384 |recall  0.9728 |F1 score  0.9553 |
+|class  2 piece |weight  0.312040|precision  0.8581 |recall  0.8879 |F1 score  0.8727 |
+|class  3 piece |weight  0.104932|precision  0.7507 |recall  0.7663 |F1 score  0.7584 |
+|class  4 piece |weight  0.021052|precision  0.4697 |recall  0.1767 |F1 score  0.2568 |
+|class  5 piece |weight  0.011774|precision  0.3913 |recall  0.1045 |F1 score  0.1649 |
+|class  6 piece |weight  0.006039|precision  0.1500 |recall  0.0005 |F1 score  0.0011 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:39:14,499 - Model - INFO - weighted precision: 0.88694
+2023-05-11 18:39:14,499 - Model - INFO - Save model...
+2023-05-11 18:39:14,499 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:39:14,547 - Model - INFO - Epoch 92 (92/100):
+2023-05-11 18:39:36,916 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:39:36,925 - Model - INFO - Train loss: 0.35472
+2023-05-11 18:39:36,925 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9380 |recall  0.9727 |F1 score  0.9550 |
+|class  2 piece |weight  0.312040|precision  0.8581 |recall  0.8881 |F1 score  0.8729 |
+|class  3 piece |weight  0.104932|precision  0.7519 |recall  0.7660 |F1 score  0.7589 |
+|class  4 piece |weight  0.021052|precision  0.4690 |recall  0.1751 |F1 score  0.2550 |
+|class  5 piece |weight  0.011774|precision  0.3815 |recall  0.1011 |F1 score  0.1598 |
+|class  6 piece |weight  0.006039|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:39:36,925 - Model - INFO - weighted precision: 0.88687
+2023-05-11 18:39:36,925 - Model - INFO - Epoch 93 (93/100):
+2023-05-11 18:39:59,517 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:39:59,518 - Model - INFO - Train loss: 0.35405
+2023-05-11 18:39:59,518 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9383 |recall  0.9728 |F1 score  0.9552 |
+|class  2 piece |weight  0.312040|precision  0.8584 |recall  0.8881 |F1 score  0.8730 |
+|class  3 piece |weight  0.104932|precision  0.7525 |recall  0.7673 |F1 score  0.7598 |
+|class  4 piece |weight  0.021052|precision  0.4643 |recall  0.1749 |F1 score  0.2541 |
+|class  5 piece |weight  0.011774|precision  0.3837 |recall  0.1026 |F1 score  0.1620 |
+|class  6 piece |weight  0.006039|precision  0.1364 |recall  0.0005 |F1 score  0.0011 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:39:59,518 - Model - INFO - weighted precision: 0.88708
+2023-05-11 18:39:59,518 - Model - INFO - Save model...
+2023-05-11 18:39:59,518 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:39:59,569 - Model - INFO - Epoch 94 (94/100):
+2023-05-11 18:40:21,860 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:40:21,869 - Model - INFO - Train loss: 0.35334
+2023-05-11 18:40:21,869 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9387 |recall  0.9730 |F1 score  0.9555 |
+|class  2 piece |weight  0.312040|precision  0.8587 |recall  0.8883 |F1 score  0.8732 |
+|class  3 piece |weight  0.104932|precision  0.7530 |recall  0.7700 |F1 score  0.7614 |
+|class  4 piece |weight  0.021052|precision  0.4813 |recall  0.1786 |F1 score  0.2605 |
+|class  5 piece |weight  0.011774|precision  0.3895 |recall  0.1029 |F1 score  0.1628 |
+|class  6 piece |weight  0.006039|precision  0.3043 |recall  0.0013 |F1 score  0.0025 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:40:21,869 - Model - INFO - weighted precision: 0.88762
+2023-05-11 18:40:21,869 - Model - INFO - Save model...
+2023-05-11 18:40:21,870 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:40:21,912 - Model - INFO - Epoch 95 (95/100):
+2023-05-11 18:40:44,416 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:40:44,416 - Model - INFO - Train loss: 0.35408
+2023-05-11 18:40:44,416 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9384 |recall  0.9729 |F1 score  0.9553 |
+|class  2 piece |weight  0.312040|precision  0.8589 |recall  0.8884 |F1 score  0.8734 |
+|class  3 piece |weight  0.104932|precision  0.7519 |recall  0.7684 |F1 score  0.7601 |
+|class  4 piece |weight  0.021052|precision  0.4739 |recall  0.1753 |F1 score  0.2559 |
+|class  5 piece |weight  0.011774|precision  0.3841 |recall  0.1008 |F1 score  0.1597 |
+|class  6 piece |weight  0.006039|precision  0.3478 |recall  0.0014 |F1 score  0.0029 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:40:44,416 - Model - INFO - weighted precision: 0.88736
+2023-05-11 18:40:44,417 - Model - INFO - Epoch 96 (96/100):
+2023-05-11 18:41:07,220 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:41:07,220 - Model - INFO - Train loss: 0.35386
+2023-05-11 18:41:07,221 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9384 |recall  0.9727 |F1 score  0.9552 |
+|class  2 piece |weight  0.312040|precision  0.8580 |recall  0.8880 |F1 score  0.8728 |
+|class  3 piece |weight  0.104932|precision  0.7507 |recall  0.7665 |F1 score  0.7585 |
+|class  4 piece |weight  0.021052|precision  0.4717 |recall  0.1736 |F1 score  0.2538 |
+|class  5 piece |weight  0.011774|precision  0.3859 |recall  0.1034 |F1 score  0.1631 |
+|class  6 piece |weight  0.006039|precision  0.4000 |recall  0.0014 |F1 score  0.0029 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:41:07,221 - Model - INFO - weighted precision: 0.88694
+2023-05-11 18:41:07,221 - Model - INFO - Epoch 97 (97/100):
+2023-05-11 18:41:29,376 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:41:29,376 - Model - INFO - Train loss: 0.35228
+2023-05-11 18:41:29,377 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9389 |recall  0.9734 |F1 score  0.9558 |
+|class  2 piece |weight  0.312040|precision  0.8601 |recall  0.8893 |F1 score  0.8744 |
+|class  3 piece |weight  0.104932|precision  0.7523 |recall  0.7690 |F1 score  0.7606 |
+|class  4 piece |weight  0.021052|precision  0.4785 |recall  0.1787 |F1 score  0.2602 |
+|class  5 piece |weight  0.011774|precision  0.3898 |recall  0.1064 |F1 score  0.1672 |
+|class  6 piece |weight  0.006039|precision  0.1613 |recall  0.0009 |F1 score  0.0018 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:41:29,377 - Model - INFO - weighted precision: 0.88806
+2023-05-11 18:41:29,377 - Model - INFO - Save model...
+2023-05-11 18:41:29,377 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:41:29,443 - Model - INFO - Epoch 98 (98/100):
+2023-05-11 18:41:51,990 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:41:51,998 - Model - INFO - Train loss: 0.35189
+2023-05-11 18:41:51,999 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9384 |recall  0.9732 |F1 score  0.9555 |
+|class  2 piece |weight  0.312040|precision  0.8597 |recall  0.8889 |F1 score  0.8740 |
+|class  3 piece |weight  0.104932|precision  0.7534 |recall  0.7683 |F1 score  0.7608 |
+|class  4 piece |weight  0.021052|precision  0.4768 |recall  0.1789 |F1 score  0.2602 |
+|class  5 piece |weight  0.011774|precision  0.3965 |recall  0.1071 |F1 score  0.1686 |
+|class  6 piece |weight  0.006039|precision  0.2059 |recall  0.0013 |F1 score  0.0025 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:41:51,999 - Model - INFO - weighted precision: 0.88781
+2023-05-11 18:41:51,999 - Model - INFO - Save model...
+2023-05-11 18:41:51,999 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:41:52,038 - Model - INFO - Epoch 99 (99/100):
+2023-05-11 18:42:14,703 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:42:14,711 - Model - INFO - Train loss: 0.35164
+2023-05-11 18:42:14,712 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9385 |recall  0.9733 |F1 score  0.9556 |
+|class  2 piece |weight  0.312040|precision  0.8594 |recall  0.8886 |F1 score  0.8737 |
+|class  3 piece |weight  0.104932|precision  0.7537 |recall  0.7678 |F1 score  0.7607 |
+|class  4 piece |weight  0.021052|precision  0.4737 |recall  0.1787 |F1 score  0.2595 |
+|class  5 piece |weight  0.011774|precision  0.3847 |recall  0.1066 |F1 score  0.1670 |
+|class  6 piece |weight  0.006039|precision  0.2000 |recall  0.0009 |F1 score  0.0018 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:42:14,712 - Model - INFO - weighted precision: 0.88771
+2023-05-11 18:42:14,712 - Model - INFO - Save model...
+2023-05-11 18:42:14,712 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:42:14,751 - Model - INFO - Epoch 100 (100/100):
+2023-05-11 18:42:37,653 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:42:37,661 - Model - INFO - Train loss: 0.35194
+2023-05-11 18:42:37,661 - Model - INFO - ----------------------sub_d_eval----------------------
+|class  1 piece |weight  0.539223|precision  0.9388 |recall  0.9736 |F1 score  0.9559 |
+|class  2 piece |weight  0.312040|precision  0.8598 |recall  0.8891 |F1 score  0.8742 |
+|class  3 piece |weight  0.104932|precision  0.7532 |recall  0.7691 |F1 score  0.7611 |
+|class  4 piece |weight  0.021052|precision  0.4741 |recall  0.1751 |F1 score  0.2557 |
+|class  5 piece |weight  0.011774|precision  0.3874 |recall  0.1051 |F1 score  0.1653 |
+|class  6 piece |weight  0.006039|precision  0.2162 |recall  0.0014 |F1 score  0.0029 |
+|class  7 piece |weight  0.002585|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  8 piece |weight  0.001086|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  9 piece |weight  0.000573|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  10piece |weight  0.000396|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  11piece |weight  0.000134|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  12piece |weight  0.000081|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  13piece |weight  0.000032|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  14piece |weight  0.000020|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+|class  15piece |weight  0.000033|precision  0.0000 |recall  0.0000 |F1 score  0.0000 |
+
+2023-05-11 18:42:37,661 - Model - INFO - weighted precision: 0.88803
+2023-05-11 18:42:37,662 - Model - INFO - Save model...
+2023-05-11 18:42:37,662 - Model - INFO - Saving at log/test_sub/checkpoints/best_model.pth
+2023-05-11 18:42:37,701 - Model - INFO - End of training...

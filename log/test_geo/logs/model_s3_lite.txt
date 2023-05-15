@@ -1,0 +1,592 @@
+2023-05-11 18:46:06,016 - Model - INFO - PARAMETER ...
+2023-05-11 18:46:06,016 - Model - INFO - Namespace(batch_size=64, model='model_s3_lite', epoch=100, learning_rate=0.0001, gpu='0', optimizer='Adam', log_dir='test_geo', decay_rate=0.0001, step_size=10, lr_decay=0.9)
+2023-05-11 18:46:06,016 - Model - INFO - Load dataset ...
+2023-05-11 18:46:06,820 - Model - INFO - No existing model, starting training from scratch...
+2023-05-11 18:46:06,821 - Model - INFO - Start training...
+2023-05-11 18:46:06,821 - Model - INFO - Epoch 1 (1/100):
+2023-05-11 18:46:37,211 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:46:37,220 - Model - INFO - Train loss: 84.98558
+2023-05-11 18:46:37,220 - Model - INFO - Save model...
+2023-05-11 18:46:37,220 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:46:37,257 - Model - INFO - Epoch 2 (2/100):
+2023-05-11 18:47:07,021 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:47:07,021 - Model - INFO - Train loss: 30.13013
+2023-05-11 18:47:07,022 - Model - INFO - Save model...
+2023-05-11 18:47:07,022 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:47:07,071 - Model - INFO - Epoch 3 (3/100):
+2023-05-11 18:47:36,659 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:47:36,659 - Model - INFO - Train loss: 22.46260
+2023-05-11 18:47:36,659 - Model - INFO - Save model...
+2023-05-11 18:47:36,659 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:47:36,707 - Model - INFO - Epoch 4 (4/100):
+2023-05-11 18:48:07,177 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:48:07,178 - Model - INFO - Train loss: 18.78577
+2023-05-11 18:48:07,178 - Model - INFO - Save model...
+2023-05-11 18:48:07,178 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:48:07,235 - Model - INFO - Epoch 5 (5/100):
+2023-05-11 18:48:37,001 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:48:37,001 - Model - INFO - Train loss: 16.38593
+2023-05-11 18:48:37,002 - Model - INFO - Save model...
+2023-05-11 18:48:37,002 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:48:37,051 - Model - INFO - Epoch 6 (6/100):
+2023-05-11 18:49:07,617 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:49:07,617 - Model - INFO - Train loss: 14.60248
+2023-05-11 18:49:07,617 - Model - INFO - Save model...
+2023-05-11 18:49:07,617 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:49:07,657 - Model - INFO - Epoch 7 (7/100):
+2023-05-11 18:49:38,185 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:49:38,185 - Model - INFO - Train loss: 13.21015
+2023-05-11 18:49:38,185 - Model - INFO - Save model...
+2023-05-11 18:49:38,186 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:49:38,233 - Model - INFO - Epoch 8 (8/100):
+2023-05-11 18:50:09,154 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:50:09,155 - Model - INFO - Train loss: 12.15078
+2023-05-11 18:50:09,155 - Model - INFO - Save model...
+2023-05-11 18:50:09,155 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:50:09,204 - Model - INFO - Epoch 9 (9/100):
+2023-05-11 18:50:40,709 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:50:40,710 - Model - INFO - Train loss: 11.27329
+2023-05-11 18:50:40,711 - Model - INFO - Save model...
+2023-05-11 18:50:40,711 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:50:40,759 - Model - INFO - Epoch 10 (10/100):
+2023-05-11 18:51:12,398 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:51:12,399 - Model - INFO - Train loss: 10.67500
+2023-05-11 18:51:12,399 - Model - INFO - Save model...
+2023-05-11 18:51:12,399 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:51:12,446 - Model - INFO - Epoch 11 (11/100):
+2023-05-11 18:51:44,100 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:51:44,100 - Model - INFO - Train loss: 10.15810
+2023-05-11 18:51:44,101 - Model - INFO - Save model...
+2023-05-11 18:51:44,101 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:51:44,166 - Model - INFO - Epoch 12 (12/100):
+2023-05-11 18:52:15,593 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:52:15,593 - Model - INFO - Train loss: 9.76866
+2023-05-11 18:52:15,593 - Model - INFO - Save model...
+2023-05-11 18:52:15,593 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:52:15,647 - Model - INFO - Epoch 13 (13/100):
+2023-05-11 18:52:47,079 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:52:47,079 - Model - INFO - Train loss: 9.44417
+2023-05-11 18:52:47,079 - Model - INFO - Save model...
+2023-05-11 18:52:47,079 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:52:47,129 - Model - INFO - Epoch 14 (14/100):
+2023-05-11 18:53:19,001 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:53:19,010 - Model - INFO - Train loss: 9.18107
+2023-05-11 18:53:19,010 - Model - INFO - Save model...
+2023-05-11 18:53:19,010 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:53:19,050 - Model - INFO - Epoch 15 (15/100):
+2023-05-11 18:53:50,967 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:53:50,967 - Model - INFO - Train loss: 8.97559
+2023-05-11 18:53:50,968 - Model - INFO - Save model...
+2023-05-11 18:53:50,968 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:53:51,016 - Model - INFO - Epoch 16 (16/100):
+2023-05-11 18:54:22,826 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:54:22,827 - Model - INFO - Train loss: 8.75743
+2023-05-11 18:54:22,827 - Model - INFO - Save model...
+2023-05-11 18:54:22,827 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:54:22,875 - Model - INFO - Epoch 17 (17/100):
+2023-05-11 18:54:54,151 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:54:54,151 - Model - INFO - Train loss: 8.52213
+2023-05-11 18:54:54,151 - Model - INFO - Save model...
+2023-05-11 18:54:54,151 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:54:54,201 - Model - INFO - Epoch 18 (18/100):
+2023-05-11 18:55:25,374 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:55:25,375 - Model - INFO - Train loss: 8.31773
+2023-05-11 18:55:25,375 - Model - INFO - Save model...
+2023-05-11 18:55:25,375 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:55:25,424 - Model - INFO - Epoch 19 (19/100):
+2023-05-11 18:55:57,072 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:55:57,072 - Model - INFO - Train loss: 8.19678
+2023-05-11 18:55:57,072 - Model - INFO - Save model...
+2023-05-11 18:55:57,072 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:55:57,123 - Model - INFO - Epoch 20 (20/100):
+2023-05-11 18:56:28,685 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:56:28,693 - Model - INFO - Train loss: 8.04165
+2023-05-11 18:56:28,693 - Model - INFO - Save model...
+2023-05-11 18:56:28,693 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:56:28,733 - Model - INFO - Epoch 21 (21/100):
+2023-05-11 18:57:00,465 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:57:00,465 - Model - INFO - Train loss: 7.92179
+2023-05-11 18:57:00,465 - Model - INFO - Save model...
+2023-05-11 18:57:00,465 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:57:00,514 - Model - INFO - Epoch 22 (22/100):
+2023-05-11 18:57:32,119 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:57:32,119 - Model - INFO - Train loss: 7.77189
+2023-05-11 18:57:32,119 - Model - INFO - Save model...
+2023-05-11 18:57:32,120 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:57:32,169 - Model - INFO - Epoch 23 (23/100):
+2023-05-11 18:58:03,562 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:58:03,562 - Model - INFO - Train loss: 7.70829
+2023-05-11 18:58:03,563 - Model - INFO - Save model...
+2023-05-11 18:58:03,563 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:58:03,610 - Model - INFO - Epoch 24 (24/100):
+2023-05-11 18:58:35,179 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:58:35,179 - Model - INFO - Train loss: 7.60148
+2023-05-11 18:58:35,180 - Model - INFO - Save model...
+2023-05-11 18:58:35,180 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:58:35,228 - Model - INFO - Epoch 25 (25/100):
+2023-05-11 18:59:06,700 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:59:06,700 - Model - INFO - Train loss: 7.54942
+2023-05-11 18:59:06,700 - Model - INFO - Save model...
+2023-05-11 18:59:06,700 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:59:06,750 - Model - INFO - Epoch 26 (26/100):
+2023-05-11 18:59:38,452 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 18:59:38,453 - Model - INFO - Train loss: 7.46594
+2023-05-11 18:59:38,453 - Model - INFO - Save model...
+2023-05-11 18:59:38,453 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 18:59:38,501 - Model - INFO - Epoch 27 (27/100):
+2023-05-11 19:00:09,967 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:00:09,967 - Model - INFO - Train loss: 7.35852
+2023-05-11 19:00:09,967 - Model - INFO - Save model...
+2023-05-11 19:00:09,967 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:00:10,017 - Model - INFO - Epoch 28 (28/100):
+2023-05-11 19:00:42,169 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:00:42,169 - Model - INFO - Train loss: 7.28166
+2023-05-11 19:00:42,170 - Model - INFO - Save model...
+2023-05-11 19:00:42,170 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:00:42,222 - Model - INFO - Epoch 29 (29/100):
+2023-05-11 19:01:14,137 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:01:14,138 - Model - INFO - Train loss: 7.22793
+2023-05-11 19:01:14,138 - Model - INFO - Save model...
+2023-05-11 19:01:14,138 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:01:14,177 - Model - INFO - Epoch 30 (30/100):
+2023-05-11 19:01:45,772 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:01:45,772 - Model - INFO - Train loss: 7.17279
+2023-05-11 19:01:45,772 - Model - INFO - Save model...
+2023-05-11 19:01:45,772 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:01:45,821 - Model - INFO - Epoch 31 (31/100):
+2023-05-11 19:02:17,726 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:02:17,726 - Model - INFO - Train loss: 7.09500
+2023-05-11 19:02:17,727 - Model - INFO - Save model...
+2023-05-11 19:02:17,727 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:02:17,767 - Model - INFO - Epoch 32 (32/100):
+2023-05-11 19:02:49,441 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:02:49,441 - Model - INFO - Train loss: 7.07217
+2023-05-11 19:02:49,441 - Model - INFO - Save model...
+2023-05-11 19:02:49,442 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:02:49,491 - Model - INFO - Epoch 33 (33/100):
+2023-05-11 19:03:20,974 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:03:20,982 - Model - INFO - Train loss: 6.99461
+2023-05-11 19:03:20,982 - Model - INFO - Save model...
+2023-05-11 19:03:20,982 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:03:21,020 - Model - INFO - Epoch 34 (34/100):
+2023-05-11 19:03:52,244 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:03:52,244 - Model - INFO - Train loss: 6.96194
+2023-05-11 19:03:52,245 - Model - INFO - Save model...
+2023-05-11 19:03:52,245 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:03:52,295 - Model - INFO - Epoch 35 (35/100):
+2023-05-11 19:04:23,807 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:04:23,816 - Model - INFO - Train loss: 6.90003
+2023-05-11 19:04:23,816 - Model - INFO - Save model...
+2023-05-11 19:04:23,816 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:04:23,856 - Model - INFO - Epoch 36 (36/100):
+2023-05-11 19:04:55,584 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:04:55,584 - Model - INFO - Train loss: 6.87231
+2023-05-11 19:04:55,585 - Model - INFO - Save model...
+2023-05-11 19:04:55,585 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:04:55,641 - Model - INFO - Epoch 37 (37/100):
+2023-05-11 19:05:27,063 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:05:27,064 - Model - INFO - Train loss: 6.84062
+2023-05-11 19:05:27,064 - Model - INFO - Save model...
+2023-05-11 19:05:27,064 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:05:27,113 - Model - INFO - Epoch 38 (38/100):
+2023-05-11 19:05:58,323 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:05:58,323 - Model - INFO - Train loss: 6.79315
+2023-05-11 19:05:58,323 - Model - INFO - Save model...
+2023-05-11 19:05:58,323 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:05:58,374 - Model - INFO - Epoch 39 (39/100):
+2023-05-11 19:06:30,048 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:06:30,056 - Model - INFO - Train loss: 6.76427
+2023-05-11 19:06:30,057 - Model - INFO - Save model...
+2023-05-11 19:06:30,057 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:06:30,098 - Model - INFO - Epoch 40 (40/100):
+2023-05-11 19:07:01,601 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:07:01,601 - Model - INFO - Train loss: 6.73083
+2023-05-11 19:07:01,601 - Model - INFO - Save model...
+2023-05-11 19:07:01,601 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:07:01,650 - Model - INFO - Epoch 41 (41/100):
+2023-05-11 19:07:33,066 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:07:33,066 - Model - INFO - Train loss: 6.70000
+2023-05-11 19:07:33,066 - Model - INFO - Save model...
+2023-05-11 19:07:33,066 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:07:33,119 - Model - INFO - Epoch 42 (42/100):
+2023-05-11 19:08:04,464 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:08:04,464 - Model - INFO - Train loss: 6.67913
+2023-05-11 19:08:04,464 - Model - INFO - Save model...
+2023-05-11 19:08:04,464 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:08:04,513 - Model - INFO - Epoch 43 (43/100):
+2023-05-11 19:08:36,084 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:08:36,085 - Model - INFO - Train loss: 6.63179
+2023-05-11 19:08:36,085 - Model - INFO - Save model...
+2023-05-11 19:08:36,085 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:08:36,133 - Model - INFO - Epoch 44 (44/100):
+2023-05-11 19:09:07,096 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:09:07,096 - Model - INFO - Train loss: 6.60942
+2023-05-11 19:09:07,096 - Model - INFO - Save model...
+2023-05-11 19:09:07,096 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:09:07,144 - Model - INFO - Epoch 45 (45/100):
+2023-05-11 19:09:38,797 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:09:38,797 - Model - INFO - Train loss: 6.56872
+2023-05-11 19:09:38,797 - Model - INFO - Save model...
+2023-05-11 19:09:38,797 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:09:38,875 - Model - INFO - Epoch 46 (46/100):
+2023-05-11 19:10:10,289 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:10:10,289 - Model - INFO - Train loss: 6.55589
+2023-05-11 19:10:10,289 - Model - INFO - Save model...
+2023-05-11 19:10:10,289 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:10:10,340 - Model - INFO - Epoch 47 (47/100):
+2023-05-11 19:10:41,908 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:10:41,916 - Model - INFO - Train loss: 6.51560
+2023-05-11 19:10:41,916 - Model - INFO - Save model...
+2023-05-11 19:10:41,917 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:10:41,956 - Model - INFO - Epoch 48 (48/100):
+2023-05-11 19:11:13,479 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:11:13,479 - Model - INFO - Train loss: 6.49639
+2023-05-11 19:11:13,480 - Model - INFO - Save model...
+2023-05-11 19:11:13,480 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:11:13,529 - Model - INFO - Epoch 49 (49/100):
+2023-05-11 19:11:44,792 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:11:44,792 - Model - INFO - Train loss: 6.46738
+2023-05-11 19:11:44,792 - Model - INFO - Save model...
+2023-05-11 19:11:44,792 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:11:44,833 - Model - INFO - Epoch 50 (50/100):
+2023-05-11 19:12:16,745 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:12:16,745 - Model - INFO - Train loss: 6.42915
+2023-05-11 19:12:16,746 - Model - INFO - Save model...
+2023-05-11 19:12:16,747 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:12:16,797 - Model - INFO - Epoch 51 (51/100):
+2023-05-11 19:12:48,020 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:12:48,021 - Model - INFO - Train loss: 6.38943
+2023-05-11 19:12:48,021 - Model - INFO - Save model...
+2023-05-11 19:12:48,021 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:12:48,069 - Model - INFO - Epoch 52 (52/100):
+2023-05-11 19:13:19,788 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:13:19,796 - Model - INFO - Train loss: 6.38012
+2023-05-11 19:13:19,796 - Model - INFO - Save model...
+2023-05-11 19:13:19,796 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:13:19,836 - Model - INFO - Epoch 53 (53/100):
+2023-05-11 19:13:51,352 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:13:51,353 - Model - INFO - Train loss: 6.35890
+2023-05-11 19:13:51,353 - Model - INFO - Save model...
+2023-05-11 19:13:51,353 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:13:51,401 - Model - INFO - Epoch 54 (54/100):
+2023-05-11 19:14:22,611 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:14:22,619 - Model - INFO - Train loss: 6.33319
+2023-05-11 19:14:22,619 - Model - INFO - Save model...
+2023-05-11 19:14:22,619 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:14:22,660 - Model - INFO - Epoch 55 (55/100):
+2023-05-11 19:14:54,439 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:14:54,439 - Model - INFO - Train loss: 6.33172
+2023-05-11 19:14:54,439 - Model - INFO - Save model...
+2023-05-11 19:14:54,439 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:14:54,488 - Model - INFO - Epoch 56 (56/100):
+2023-05-11 19:15:25,888 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:15:25,897 - Model - INFO - Train loss: 6.30124
+2023-05-11 19:15:25,897 - Model - INFO - Save model...
+2023-05-11 19:15:25,897 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:15:25,938 - Model - INFO - Epoch 57 (57/100):
+2023-05-11 19:15:57,322 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:15:57,322 - Model - INFO - Train loss: 6.26267
+2023-05-11 19:15:57,322 - Model - INFO - Save model...
+2023-05-11 19:15:57,322 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:15:57,371 - Model - INFO - Epoch 58 (58/100):
+2023-05-11 19:16:28,723 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:16:28,731 - Model - INFO - Train loss: 6.23574
+2023-05-11 19:16:28,731 - Model - INFO - Save model...
+2023-05-11 19:16:28,731 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:16:28,772 - Model - INFO - Epoch 59 (59/100):
+2023-05-11 19:17:00,463 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:17:00,463 - Model - INFO - Train loss: 6.22556
+2023-05-11 19:17:00,464 - Model - INFO - Save model...
+2023-05-11 19:17:00,464 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:17:00,506 - Model - INFO - Epoch 60 (60/100):
+2023-05-11 19:17:31,306 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:17:31,314 - Model - INFO - Train loss: 6.23875
+2023-05-11 19:17:31,314 - Model - INFO - Epoch 61 (61/100):
+2023-05-11 19:18:02,611 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:18:02,620 - Model - INFO - Train loss: 6.20261
+2023-05-11 19:18:02,620 - Model - INFO - Save model...
+2023-05-11 19:18:02,620 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:18:02,661 - Model - INFO - Epoch 62 (62/100):
+2023-05-11 19:18:34,010 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:18:34,018 - Model - INFO - Train loss: 6.16639
+2023-05-11 19:18:34,019 - Model - INFO - Save model...
+2023-05-11 19:18:34,019 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:18:34,058 - Model - INFO - Epoch 63 (63/100):
+2023-05-11 19:19:05,739 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:19:05,740 - Model - INFO - Train loss: 6.15664
+2023-05-11 19:19:05,740 - Model - INFO - Save model...
+2023-05-11 19:19:05,740 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:19:05,782 - Model - INFO - Epoch 64 (64/100):
+2023-05-11 19:19:37,168 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:19:37,168 - Model - INFO - Train loss: 6.14513
+2023-05-11 19:19:37,168 - Model - INFO - Save model...
+2023-05-11 19:19:37,168 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:19:37,217 - Model - INFO - Epoch 65 (65/100):
+2023-05-11 19:20:09,111 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:20:09,112 - Model - INFO - Train loss: 6.12618
+2023-05-11 19:20:09,112 - Model - INFO - Save model...
+2023-05-11 19:20:09,112 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:20:09,153 - Model - INFO - Epoch 66 (66/100):
+2023-05-11 19:20:40,980 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:20:40,980 - Model - INFO - Train loss: 6.12276
+2023-05-11 19:20:40,980 - Model - INFO - Save model...
+2023-05-11 19:20:40,980 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:20:41,032 - Model - INFO - Epoch 67 (67/100):
+2023-05-11 19:21:13,067 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:21:13,067 - Model - INFO - Train loss: 6.12967
+2023-05-11 19:21:13,068 - Model - INFO - Epoch 68 (68/100):
+2023-05-11 19:21:45,010 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:21:45,018 - Model - INFO - Train loss: 6.09572
+2023-05-11 19:21:45,018 - Model - INFO - Save model...
+2023-05-11 19:21:45,019 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:21:45,060 - Model - INFO - Epoch 69 (69/100):
+2023-05-11 19:22:17,090 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:22:17,098 - Model - INFO - Train loss: 6.07391
+2023-05-11 19:22:17,099 - Model - INFO - Save model...
+2023-05-11 19:22:17,099 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:22:17,138 - Model - INFO - Epoch 70 (70/100):
+2023-05-11 19:22:49,165 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:22:49,165 - Model - INFO - Train loss: 6.06566
+2023-05-11 19:22:49,165 - Model - INFO - Save model...
+2023-05-11 19:22:49,165 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:22:49,215 - Model - INFO - Epoch 71 (71/100):
+2023-05-11 19:23:20,944 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:23:20,944 - Model - INFO - Train loss: 6.03235
+2023-05-11 19:23:20,944 - Model - INFO - Save model...
+2023-05-11 19:23:20,944 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:23:20,985 - Model - INFO - Epoch 72 (72/100):
+2023-05-11 19:23:52,809 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:23:52,810 - Model - INFO - Train loss: 6.01034
+2023-05-11 19:23:52,810 - Model - INFO - Save model...
+2023-05-11 19:23:52,810 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:23:52,858 - Model - INFO - Epoch 73 (73/100):
+2023-05-11 19:24:24,712 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:24:24,712 - Model - INFO - Train loss: 6.02725
+2023-05-11 19:24:24,713 - Model - INFO - Epoch 74 (74/100):
+2023-05-11 19:24:56,407 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:24:56,407 - Model - INFO - Train loss: 6.00630
+2023-05-11 19:24:56,407 - Model - INFO - Save model...
+2023-05-11 19:24:56,408 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:24:56,452 - Model - INFO - Epoch 75 (75/100):
+2023-05-11 19:25:28,524 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:25:28,524 - Model - INFO - Train loss: 5.98007
+2023-05-11 19:25:28,525 - Model - INFO - Save model...
+2023-05-11 19:25:28,525 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:25:28,563 - Model - INFO - Epoch 76 (76/100):
+2023-05-11 19:26:00,462 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:26:00,471 - Model - INFO - Train loss: 5.97080
+2023-05-11 19:26:00,471 - Model - INFO - Save model...
+2023-05-11 19:26:00,471 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:26:00,510 - Model - INFO - Epoch 77 (77/100):
+2023-05-11 19:26:32,314 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:26:32,322 - Model - INFO - Train loss: 5.95826
+2023-05-11 19:26:32,323 - Model - INFO - Save model...
+2023-05-11 19:26:32,323 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:26:32,363 - Model - INFO - Epoch 78 (78/100):
+2023-05-11 19:27:03,974 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:27:03,974 - Model - INFO - Train loss: 5.96411
+2023-05-11 19:27:03,974 - Model - INFO - Epoch 79 (79/100):
+2023-05-11 19:27:36,044 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:27:36,052 - Model - INFO - Train loss: 5.94496
+2023-05-11 19:27:36,052 - Model - INFO - Save model...
+2023-05-11 19:27:36,052 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:27:36,095 - Model - INFO - Epoch 80 (80/100):
+2023-05-11 19:28:07,427 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:28:07,427 - Model - INFO - Train loss: 5.93442
+2023-05-11 19:28:07,427 - Model - INFO - Save model...
+2023-05-11 19:28:07,427 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:28:07,476 - Model - INFO - Epoch 81 (81/100):
+2023-05-11 19:28:39,070 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:28:39,071 - Model - INFO - Train loss: 5.92203
+2023-05-11 19:28:39,071 - Model - INFO - Save model...
+2023-05-11 19:28:39,071 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:28:39,121 - Model - INFO - Epoch 82 (82/100):
+2023-05-11 19:29:10,825 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:29:10,834 - Model - INFO - Train loss: 5.91571
+2023-05-11 19:29:10,834 - Model - INFO - Save model...
+2023-05-11 19:29:10,834 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:29:10,879 - Model - INFO - Epoch 83 (83/100):
+2023-05-11 19:29:42,298 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:29:42,299 - Model - INFO - Train loss: 5.90379
+2023-05-11 19:29:42,299 - Model - INFO - Save model...
+2023-05-11 19:29:42,299 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:29:42,348 - Model - INFO - Epoch 84 (84/100):
+2023-05-11 19:30:14,303 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:30:14,311 - Model - INFO - Train loss: 5.89646
+2023-05-11 19:30:14,311 - Model - INFO - Save model...
+2023-05-11 19:30:14,311 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:30:14,351 - Model - INFO - Epoch 85 (85/100):
+2023-05-11 19:30:46,075 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:30:46,075 - Model - INFO - Train loss: 5.87408
+2023-05-11 19:30:46,075 - Model - INFO - Save model...
+2023-05-11 19:30:46,075 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:30:46,117 - Model - INFO - Epoch 86 (86/100):
+2023-05-11 19:31:18,049 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:31:18,050 - Model - INFO - Train loss: 5.85984
+2023-05-11 19:31:18,050 - Model - INFO - Save model...
+2023-05-11 19:31:18,050 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:31:18,100 - Model - INFO - Epoch 87 (87/100):
+2023-05-11 19:31:49,578 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:31:49,587 - Model - INFO - Train loss: 5.86457
+2023-05-11 19:31:49,587 - Model - INFO - Epoch 88 (88/100):
+2023-05-11 19:32:21,061 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:32:21,061 - Model - INFO - Train loss: 5.83589
+2023-05-11 19:32:21,061 - Model - INFO - Save model...
+2023-05-11 19:32:21,061 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:32:21,109 - Model - INFO - Epoch 89 (89/100):
+2023-05-11 19:32:53,172 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:32:53,172 - Model - INFO - Train loss: 5.84828
+2023-05-11 19:32:53,172 - Model - INFO - Epoch 90 (90/100):
+2023-05-11 19:33:24,947 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:33:24,947 - Model - INFO - Train loss: 5.82886
+2023-05-11 19:33:24,948 - Model - INFO - Save model...
+2023-05-11 19:33:24,948 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:33:24,998 - Model - INFO - Epoch 91 (91/100):
+2023-05-11 19:33:56,366 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:33:56,366 - Model - INFO - Train loss: 5.81910
+2023-05-11 19:33:56,367 - Model - INFO - Save model...
+2023-05-11 19:33:56,367 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:33:56,416 - Model - INFO - Epoch 92 (92/100):
+2023-05-11 19:34:28,070 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:34:28,070 - Model - INFO - Train loss: 5.80345
+2023-05-11 19:34:28,070 - Model - INFO - Save model...
+2023-05-11 19:34:28,070 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:34:28,120 - Model - INFO - Epoch 93 (93/100):
+2023-05-11 19:35:00,113 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:35:00,114 - Model - INFO - Train loss: 5.79073
+2023-05-11 19:35:00,114 - Model - INFO - Save model...
+2023-05-11 19:35:00,114 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:35:00,154 - Model - INFO - Epoch 94 (94/100):
+2023-05-11 19:35:32,130 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:35:32,139 - Model - INFO - Train loss: 5.77787
+2023-05-11 19:35:32,139 - Model - INFO - Save model...
+2023-05-11 19:35:32,139 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:35:32,178 - Model - INFO - Epoch 95 (95/100):
+2023-05-11 19:36:03,879 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:36:03,879 - Model - INFO - Train loss: 5.76499
+2023-05-11 19:36:03,879 - Model - INFO - Save model...
+2023-05-11 19:36:03,879 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:36:03,919 - Model - INFO - Epoch 96 (96/100):
+2023-05-11 19:36:35,732 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:36:35,732 - Model - INFO - Train loss: 5.78059
+2023-05-11 19:36:35,733 - Model - INFO - Epoch 97 (97/100):
+2023-05-11 19:37:07,424 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:37:07,432 - Model - INFO - Train loss: 5.75414
+2023-05-11 19:37:07,433 - Model - INFO - Save model...
+2023-05-11 19:37:07,433 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:37:07,474 - Model - INFO - Epoch 98 (98/100):
+2023-05-11 19:37:39,239 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:37:39,239 - Model - INFO - Train loss: 5.74226
+2023-05-11 19:37:39,239 - Model - INFO - Save model...
+2023-05-11 19:37:39,239 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:37:39,289 - Model - INFO - Epoch 99 (99/100):
+2023-05-11 19:38:11,449 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:38:11,457 - Model - INFO - Train loss: 5.73917
+2023-05-11 19:38:11,457 - Model - INFO - Save model...
+2023-05-11 19:38:11,457 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:38:11,501 - Model - INFO - Epoch 100 (100/100):
+2023-05-11 19:38:43,571 - Model - INFO - ----------------------eval----------------------
+
+2023-05-11 19:38:43,571 - Model - INFO - Train loss: 5.73763
+2023-05-11 19:38:43,571 - Model - INFO - Save model...
+2023-05-11 19:38:43,571 - Model - INFO - Saving at log/test_geo/checkpoints/best_model.pth
+2023-05-11 19:38:43,621 - Model - INFO - End of training...
