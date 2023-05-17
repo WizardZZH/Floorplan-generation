@@ -140,18 +140,18 @@ def min_cost_flow_form(network):
     if status != smcf.OPTIMAL:
         print('There was an issue with the min cost flow input.')
         print(f'Status: {status}')
-        exit(1)
-    print(f'Minimum cost: {smcf.optimal_cost()}')
-    print('')
-    print(' Arc    Flow / Capacity Cost')
+        return 1,1
+    #print(f'Minimum cost: {smcf.optimal_cost()}')
+    #print('')
+    #print(' Arc    Flow / Capacity Cost')
     solution_flows = smcf.flows(all_arcs)
     costs = solution_flows * unit_costs
-    for arc, flow, cost in zip(all_arcs, solution_flows, costs):
-        print(
-            f'{smcf.tail(arc):1} -> {smcf.head(arc)}  {flow:3}  / {smcf.capacity(arc):3}       {cost}'
-        )
+    # for arc, flow, cost in zip(all_arcs, solution_flows, costs):
+    #     print(
+    #         f'{smcf.tail(arc):1} -> {smcf.head(arc)}  {flow:3}  / {smcf.capacity(arc):3}       {cost}'
+    #     )
 
-    return solution_flows
+    return solution_flows,0
 
 if __name__ == '__main__':
     main()

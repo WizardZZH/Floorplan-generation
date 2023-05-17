@@ -20,7 +20,7 @@ sys.path.append(os.path.join(ROOT_DIR, 'models'))
 def parse_args():
     '''PARAMETERS'''
     parser = argparse.ArgumentParser('Net')
-    parser.add_argument('--step_1_path', type=str, default='./data/output/step_1/test_sub/', help='step_1_folder')
+    parser.add_argument('--step_1_path', type=str, default='./output/step_1/test_sub/', help='step_1_folder')
     parser.add_argument('--split', type=str, default='./data/test_split.txt', help='val or test')
     parser.add_argument('--batch_size', type=int, default=1, help='batch size in training [default: 24]')
     parser.add_argument('--model', default='model_s3_lite', help='model name [default: Net_cls]')
@@ -64,7 +64,9 @@ def main(args):
         start_epoch = 0
 
     export_dir = './output/step_2/'+args.log_dir+'/'
-    dirs = ['./data/'+ args.split,args.step_1_path,export_dir]
+    Path(export_dir).mkdir(exist_ok=True)
+
+    dirs = [args.split,args.step_1_path,export_dir]
 
     num_batches = len(testDataLoader)
 

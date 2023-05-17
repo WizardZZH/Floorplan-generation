@@ -17,7 +17,7 @@ def is_connected(idx_1,idx_2,com_emb):
 
 
 def quad_prog(coor,order,com_emb):
-    delta = -0.1
+    delta = -10
     length = coor.shape[0]
     P = matrix(np.eye(length))
     q = matrix(coor*(-1))
@@ -45,11 +45,13 @@ def quad_prog(coor,order,com_emb):
                         equ[idx_n] = -1
                     G.append(equ)
 
+    if len(G) <=3:
+        return 0,1
     h = matrix(np.ones(len(G))*delta)
     b = matrix(np.zeros(len(A)))
     G = matrix(np.array(G))
     A = matrix(np.array(A))
-    print(P,q,G,h,A,b)
+    #print(P,q,G,h,A,b)
     sol = solvers.qp(P,q,G,h,A,b)
     sol_x = np.array(sol['x']).reshape(-1).tolist()
-    return sol_x
+    return sol_x,0

@@ -17,43 +17,44 @@
 ---
 ## Data
 
-- download the RPLAN dataset from http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html
+- download the RPLAN dataset from https://docs.google.com/forms/d/e/1FAIpQLSfwteilXzURRKDI5QopWCyOGkeb_CFFbRwtQ0SOPhEg0KGSfw/viewform?usp=sf_link
 - extract png data into './data/rplan/'
-- run 
+- preprocess png to json, run 
 ```
-python3 ./data_utils/prepropcessing.py [path to png] [path to json]
+python3 ./data_utils/prepropcessing.py --png_path [path to png] --json_path [path to json]
 ```
-- run 
+- split training/valid/test set, run 
 ```
-python3 ./data_utils/data_split.py [path to split.txt]
+python3 ./data_utils/data_split.py --out_path [path to split.txt]
 ```
 ---
 
 ## Training
 
-- run 
+- train topology, run 
 ```
-python3 train.py [path to json] [path to split.txt] [path for saving model]
+python3 train.py --data_path [path to json] --split [path to train_split.txt] --log_dir [path for saving model]
 ```
-- run 
+- train geometry, run 
 ```
-python3 train_geo.py [path to json] [path to split.txt] [path for saving model]
+python3 train_geo.py --data_path [path to json] --split [path to split.txt] --log_dir [path for saving model]
 ```
 
 ---
 
 ## Reasoning
 
-- run 
+- predict topology, run 
 ```
-python3 test.py [path to json] [path to split.txt] [path for result_1]
+python3 test.py --data_path [path to json] --split [path to test_split.txt] --log_dir [path for result_1]
 ```
-- run 
+- predict geometry, run 
 ```
-python3 test_geo.py [path to result_1] [path to split.txt] [path for result_2]
+python3 test_geo.py --step_1_path [path to result_1] --split [path to test_split.txt] --log_dir [path for result_2]
 ```
 
-- run 
+- optimization, run 
 ```
-python3 ./post/orthogonal_drawing.py [path for result_2] [path for images]
+python3 ./post/orthogonal_drawing.py --json_path [path for result_2] --png_path [path for images]
 ```
+

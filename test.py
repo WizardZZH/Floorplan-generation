@@ -20,7 +20,7 @@ sys.path.append(os.path.join(ROOT_DIR, 'models'))
 def parse_args():
     '''PARAMETERS'''
     parser = argparse.ArgumentParser('Net')
-    parser.add_argument('--data_path', type=str, default='./data/json/', help='data_folder')
+    parser.add_argument('--data_path', type=str, default='/home/zzh/Documents/data/NGPD/', help='data_folder')
     parser.add_argument('--split', type=str, default='./data/test_split.txt', help='val or test')
     parser.add_argument('--batch_size', type=int, default=1, help='batch size in training [default: 24]')
     parser.add_argument('--model', default='model_s2_lite', help='model name [default: Net_cls]')
@@ -65,8 +65,10 @@ def main(args):
         start_epoch = 0
 
     
-    export_dir = '/output/step_1/'+ args.log_dir + '/'
-    dirs = ['./data/'+ args.split,args.data_path,export_dir]
+    export_dir = './output/step_1/'+ args.log_dir + '/'
+    Path(export_dir).mkdir(exist_ok=True)
+
+    dirs = [ args.split,args.data_path,export_dir]
 
 
     for batch_id, data in tqdm(enumerate(testDataLoader, 0), total=len(testDataLoader), smoothing=0.9):
@@ -82,14 +84,14 @@ def main(args):
         model = classifier.eval()
         result = model(data)
         
-    
+        
         data_geo = update_top(result,batch_id,data[4],dirs)
         
         
         
         
         
-    print('End of training...')
+    print('End of test_1...')
 
 if __name__ == '__main__':
     args = parse_args()

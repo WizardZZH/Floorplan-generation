@@ -73,3 +73,6 @@ def main(args):
                     else:
                         writer_2.write(train_valid[i] + '\n')
 
+if __name__ == '__main__':
+    args = parse_args()
+    main(args)

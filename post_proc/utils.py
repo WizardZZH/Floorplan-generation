@@ -5,6 +5,8 @@ import copy
 import cv2 as cv
 
 
+
+
 def  H_ortho_discriminator(data_json):
     flag = 0
     ## condition 0: sum of inner poly conner equals to pi*(p-2)
@@ -12,6 +14,7 @@ def  H_ortho_discriminator(data_json):
     ## condition 2: sum of conner on each vertex equals to pi
     vertex = data_json['dual_node']
 
+    vertex = np.clip(np.array(vertex),20,230).tolist()
     combine_emb = data_json['conbinal_embedding']
     vertex_conner = np.zeros(len(vertex))
     ## condition 0
@@ -74,6 +77,7 @@ def combine_emb_2_network(data_json):
     face_cap = 100   
 
     vertex = data_json['dual_node']
+    vertex = np.clip(np.array(vertex),20,230).tolist()
     combine_emb = data_json['conbinal_embedding']
     bubble_edge = data_json['bubble_edge']
     dual_edge = data_json['dual_edge']
@@ -115,7 +119,7 @@ def combine_emb_2_network(data_json):
                 angle = 2
                 pos_cap,neg_cap = 1,1
             if angle > 240:
-                aangle = 3
+                angle = 3
                 pos_cap,neg_cap = 0,2
 
 
@@ -175,6 +179,8 @@ def update_network(data_json,network,flow = []):
     combin_emb = copy.deepcopy(data_json['conbinal_embedding'])
     deg_combin_emb = copy.deepcopy(combin_emb)
     vertex = copy.deepcopy(data_json['dual_node'])
+    vertex = np.clip(np.array(vertex),20,230).tolist()
+
     dual_edge = data_json['dual_edge']
     bubble_edge = data_json['bubble_edge']
 
@@ -203,7 +209,7 @@ def update_network(data_json,network,flow = []):
         for i in range(vex_edge_num):
             v_id = start_nodes[2*i]
             f_id = end_nodes[2*i] - len(vertex)
-            angle = 3 - capacities[2*i] + flow[2*i] - flow[2*i-1]
+            angle = 3 - capacities[2*i] + flow[2*i] - flow[2*i + 1]
             idx = combin_emb[f_id].index(v_id)
             deg_combin_emb[f_id][idx] = angle
 
@@ -240,11 +246,11 @@ def update_network(data_json,network,flow = []):
                 deg_1,deg_2 = 3,1
                 
             for k in range(bends[i][2]):
-                combin_emb[face_idx_1].insert(s_idx_1, k+len(vertex))
-                combin_emb[face_idx_2].insert(s_idx_2, bends[i][2]-k-1 + len(vertex))
+                combin_emb[face_idx_1].insert(s_idx_1+1, k+len(vertex))
+                combin_emb[face_idx_2].insert(s_idx_2+1, bends[i][2]-k-1 + len(vertex))
 
-                deg_combin_emb[face_idx_1].insert(s_idx_1, deg_1)
-                deg_combin_emb[face_idx_2].insert(s_idx_2, deg_2)
+                deg_combin_emb[face_idx_1].insert(s_idx_1+1, deg_1)
+                deg_combin_emb[face_idx_2].insert(s_idx_2+1, deg_2)
 
                 s_idx_1 += 1
                 s_idx_2 += 1 
@@ -295,8 +301,153 @@ def  split_outer(deg_combin_emb,combin_emb,vertex):
 
     return deg_combin_emb,combin_emb,glue_pt
 
-def network_2_rec(H_ortho):
+def check_json(data_json):
+    combin_emb = data_json['conbinal_embedding']
+    # check edge
+    edges = []
+    flag = 0
+    for i in range(len(combin_emb)):
+        for j in range(len(combin_emb[i])):
+            v = combin_emb[i][j]
+            u = combin_emb[i][j-1]
+            edges.append([u,v,-1])
+    for i in range(len(edges)):
+        count = 0
+        u = edges[i][0]
+        v = edges[i][1]
+
+        for j in range(len(edges)):
+            if i!=j:
+                u_1 = edges[j][0]
+                v_1 = edges[j][1] 
+                if u_1==u and v_1==v:
+                    count = 100
+                if u_1==v and v_1==u:
+                    count +=1
+        if count!=1:
+            flag = 1
+
+    return flag
+
+
+def check_ortho(H_ortho):
     vertex,combin_emb,deg_combin_emb = H_ortho
+    flag = 0
+    # check vertex
+    for i in range(len(vertex)):
+        angle =0
+        for j in range(len(combin_emb)):
+            for k in range(len(combin_emb[j])):
+                if combin_emb[j][k] == i:
+                    angle += deg_combin_emb[j][k]
+        if angle != 4:
+            flag = 1
+    for j in range(len(combin_emb)-1):
+        angle = 0
+        for k in range(len(combin_emb[j])):
+            angle += deg_combin_emb[j][k]
+        correct_angle = (len(combin_emb[j])-2)*2
+        if correct_angle!= angle:
+            flag = 1
+    # check edge
+    edges = []
+    for i in range(len(combin_emb)):
+        for j in range(len(combin_emb[i])):
+            v = combin_emb[i][j]
+            u = combin_emb[i][j-1]
+            edges.append([u,v,-1])
+    for i in range(len(edges)):
+        count = 0
+        u = edges[i][0]
+        v = edges[i][1]
+
+        for j in range(len(edges)):
+            if i!=j:
+                u_1 = edges[j][0]
+                v_1 = edges[j][1] 
+                if u_1==u and v_1==v:
+                    count = 100
+                if u_1==v and v_1==u:
+                    count +=1
+        if count!=1:
+            flag = 1
+    # check face
+    angle = 0
+    for k in range(len(combin_emb[-1])):
+        angle += deg_combin_emb[-1][k]
+    correct_angle = (len(combin_emb[-1])+2)*2
+    if correct_angle!= angle:
+        flag = 1
+
+    return flag
+
+def check_rec(H_ortho_rec,H_ortho):
+    vertice_2,deg_room_G,com_room_G = H_ortho_rec
+    vertice,_,_ = H_ortho
+    # v1,v2,v/h,    
+    flag = 0
+    rooms_com,rooms_deg = [],[]
+    for i in range(len(com_room_G)):
+        for j in range(len(com_room_G[i])):
+            rooms_com.append(com_room_G[i][j])
+            rooms_deg.append(deg_room_G[i][j])
+    
+
+    for i in range(len(vertice)):
+        angle =0
+        for j in range(len(rooms_com)):
+            for k in range(len(rooms_com[j])):
+                if rooms_com[j][k] == i:
+                    angle += rooms_deg[j][k]
+        if angle != 4:
+            flag = 1
+    # check edge
+    edges = []
+    eps = 0.0001
+    for i in range(len(rooms_com)):
+        for j in range(len(rooms_com[i])):
+            v = rooms_com[i][j]
+            u = rooms_com[i][j-1]
+            edges.append([u,v,-1])
+
+    for i in range(len(edges)):
+        count = 0
+        u = edges[i][0]
+        v = edges[i][1]
+
+        for j in range(len(edges)):
+            if i!=j:
+                u_1 = edges[j][0]
+                v_1 = edges[j][1] 
+                if u_1==u and v_1==v:
+                    count = 100
+                if u_1==v and v_1==u:
+                    count +=1
+        if abs(vertice_2[u][0]) < eps or abs(vertice_2[u][1])< eps or abs(vertice_2[u][0]-255) < eps or abs(vertice_2[u][1]-255)< eps:
+           if abs(vertice_2[v][0]) < eps or abs(vertice_2[v][1])< eps or abs(vertice_2[v][0]-255) < eps or abs(vertice_2[v][1]-255)< eps:
+               count = 1
+        if count!=1:
+            flag = 1
+
+    for j in range(len(rooms_com)):
+        angle = 0
+        count = 0
+        for k in range(len(rooms_com[j])):
+            angle += rooms_deg[j][k]
+            if rooms_deg[j][k]>2:
+                flag = 1
+            if rooms_deg[j][k]==1:
+                count +=1 
+        correct_angle = (len(rooms_com[j])-2)*2
+        if correct_angle!= angle:
+            flag = 1
+        if 4!= count:
+            flag = 1
+
+    return flag
+
+def network_2_rec(H_ortho):
+    vertex,combin_emb,deg_combin_emb = H_ortho[0].copy(),H_ortho[1].copy(),H_ortho[2].copy()
 
     # each room
     deg_room_G, com_room_G=[],[]
@@ -322,6 +473,7 @@ def network_2_rec(H_ortho):
     deg_room_G.append(deg_room)
     com_room_G.append(com_room)
 
+ 
 
     return vertex,deg_room_G,com_room_G
 
@@ -340,11 +492,11 @@ def cross_point(line1, line2):
         k1 = (y2 - y1) * 1.0 / (x2 - x1)  
         b1 = y1 * 1.0 - x1 * k1 * 1.0  
 
-    if (x4 - x3) == 0:  
+    if (x4 - x3) == 0:  # L2直线斜率不存在
         k2 = None
         b2 = 0
     else:
-        k2 = (y4 - y3) * 1.0 / (x4 - x3)  
+        k2 = (y4 - y3) * 1.0 / (x4 - x3)  # 斜率存在
         b2 = y3 * 1.0 - x3 * k2 * 1.0
 
     if k1 is None:
@@ -503,10 +655,22 @@ def rec_each_room(vertex,combin_emb, deg_combin_emb,deg_room, combin_room):
                 flag -= 1
                 break
     
+    # canvas = np.zeros((256,256,3),np.uint8)
+
+    # for i in range(len(com_room)):
+    #     color = (np.random.rand(3)*255).astype(np.uint8).tolist()
+    #     contours = []
+    #     for j in range(len(com_room[i])):
+    #         idx = com_room[i][j]
+    #         contours.append([int(vertex[idx][0]),int(vertex[idx][1])])
+    #     contours = np.array(contours)
+    #     cv.drawContours(canvas, [contours], -1, color, -1)
+
+    # cv.imshow('1',canvas)
+    # cv.waitKey()
 
 
     return vertex,combin_emb,deg_combin_emb, deg_room,com_room
-
 #curr_edge[i],curr_room[i],rooms_com,rooms_deg,room_ext,outer_idx
 def edge_pos_2_rec(curr_edge,curr_room_idx,rooms_com,rooms_deg,room_ext,outer_idx):
     edge_room,nxt_room,co_edge =[],[],[]
@@ -560,7 +724,6 @@ def edge_pos_2_rec(curr_edge,curr_room_idx,rooms_com,rooms_deg,room_ext,outer_id
 
     return edge_room,nxt_room,co_edge
 
-
 def H_ortho_2_compact_drawing(H_ortho_rec):
     vertex,deg_room_G,com_room_G = H_ortho_rec
     max_len = 10000
@@ -578,7 +741,7 @@ def H_ortho_2_compact_drawing(H_ortho_rec):
 
     start_room,start_vex = 0,0
     for i in range(len(vertex)):
-        if vertex[i][0] ==0 and vertex[i][1] ==255:
+        if vertex[i][0] ==0 and vertex[i][1] ==0:
             start_vex = i
             break
     for i in range(len(rooms_com)):
@@ -587,40 +750,82 @@ def H_ortho_2_compact_drawing(H_ortho_rec):
             break
     idx_prev = rooms_com[start_room].index(start_vex)-1
     idx_prev = rooms_com[start_room][idx_prev]
-    face_left,face_right,face_down,face_up  = len(rooms_com),len(rooms_com)+1,len(rooms_com),len(rooms_com)+1
+    face_left,face_right,face_up,face_down  = len(rooms_com),len(rooms_com)+1,len(rooms_com),len(rooms_com)+1
     start_edges = [idx_prev,start_vex,0,face_left,start_room]
 
 
+
+
+
+    outer_idx = [face_up,face_left,face_down,face_right]
     edge = []
-    room_ext = []
+    start_edge_idx = 0
+    for i in range(len(rooms_com)):
+        for j in range(len(rooms_com[i])):
+            v = rooms_com[i][j]
+            u = rooms_com[i][j-1]
+            if u== idx_prev and v== start_vex:
+                # [0:s,1:e,2:prev,3:next,4:pos,5:face,6:adj_face,7:adj_edge,8:v_angle]
+                edge.append([u,v,-1,-1,0,i,-1,-1,rooms_deg[i][j]])
+                start_edge_idx = len(edge)-1
+            else:
+                edge.append([u,v,-1,-1,-1,i,-1,-1,rooms_deg[i][j]])
 
-    
-    curr_room = [start_room]
-    curr_edge = [start_edges]
-    room_count = 0
-    while(room_count<len(rooms_com)):
-        nxt_room_list,co_edge_list = [],[]
-        nxt_room_tmp,co_edge_tmp = [],[]
+    for i in range(len(edge)):
+        u_1 = edge[i][0]
+        v_1 = edge[i][1]
+        f_1 = edge[i][5]
+        for j in range(len(edge)):
+            if i!=j:
+                u_2 = edge[j][0]
+                v_2 = edge[j][1]
+                f_2 = edge[j][5] 
+                if u_2== v_1 and v_2==u_1:
+                    edge[i][7] = j
+                    edge[j][7] = i
+                    edge[i][6] = edge[j][5]
+                    edge[j][6] = edge[i][5]
+                if f_1== f_2:
+                    if u_2== v_1:
+                        edge[i][3] = j
+                        edge[j][2] = i
+                    if u_1== v_2:
+                        edge[i][2] = j
+                        edge[j][3] = i
 
-        for i in range(len(curr_room)):
-            outer_idx = [face_left,face_down,face_right,face_up]
-            edge_room,nxt_room,co_edge = edge_pos_2_rec(curr_edge[i],curr_room[i],rooms_com,rooms_deg,room_ext,outer_idx)
-            
-            room_ext.append(curr_room[i])
-            co_edge_tmp.extend(co_edge)
-            nxt_room_tmp.extend(nxt_room)
-            
-            edge.extend(edge_room)
-            room_count += 1 
+    current_e_idx = [start_edge_idx]
+    count = 1
+    while(count<len(edge)):
+        next_id = []
+        for i in current_e_idx:
+            pos = edge[i][4]
+            nxt_id = edge[i][3]
+            prev_id = edge[i][2]
+            adj_id = edge[i][7]
+            if adj_id!= -1:
+                if edge[adj_id][4]== -1:
+                    edge[adj_id][4] = (pos+2)%4
+                    count+=1
+                    next_id.append(adj_id)
+            if edge[nxt_id][4]== -1:
+                angle = edge[i][-1]
+                if angle==1:
+                    edge[nxt_id][4] = (pos+1)%4
+                else:
+                    edge[nxt_id][4] = pos
+                count+=1
+                next_id.append(nxt_id)
+            if edge[prev_id][4]== -1:
+                angle = edge[prev_id][-1]
+                if angle==1:
+                    edge[prev_id][4] = (pos+3)%4
+                else:
+                    edge[prev_id][4] = pos
+                count+=1
+                next_id.append(prev_id)
+        current_e_idx = next_id
 
-        for i in range(len(nxt_room_tmp)):
-                if not(nxt_room_tmp[i] in nxt_room_list):
-                    if  not(nxt_room_tmp[i] in room_ext):
-                        nxt_room_list.append(nxt_room_tmp[i])
-                        co_edge_list.append(co_edge_tmp[i])
 
-        curr_room = nxt_room_list
-        curr_edge = co_edge_list
     x_edge_idx,y_edge_idx =[],[]
 
     x_supplies = np.zeros(len(rooms_com)+2)
@@ -628,59 +833,52 @@ def H_ortho_2_compact_drawing(H_ortho_rec):
 
 
     for i in range(len(edge)):
-        if edge[i][2]==0:
-            y_start_nodes.append(edge[i][4])
-            y_end_nodes.append(edge[i][3])
+        if edge[i][4]==0:
+            y_end_nodes.append(edge[i][5])
+            if edge[i][6] == -1:
+                y_start_nodes.append(outer_idx[0])
+            else:
+                y_start_nodes.append(edge[i][6])
             y_capacities.append(max_len)
             y_unit_costs.append(1)
             y_edge_idx.append(i)
-        if edge[i][2]==1:
-            x_start_nodes.append(edge[i][4])
-            x_end_nodes.append(edge[i][3])
+
+        if edge[i][4]==1:
+            x_end_nodes.append(edge[i][5])
+            if edge[i][6] == -1:
+                x_start_nodes.append(outer_idx[1])
+            else:
+                x_start_nodes.append(edge[i][6])
             x_capacities.append(max_len)
             x_unit_costs.append(1)
             x_edge_idx.append(i)
 
-
-    for i in range(len(edge)):
-        if edge[i][2]==2:
-            flag_y = 0
-            for j in range(len(y_edge_idx)):
-                s = edge[y_edge_idx[j]][0]
-                e = edge[y_edge_idx[j]][1]
-                if edge[i][0] == e and edge[i][1] == s:
-                    flag_y = 1
-                    break
-            if flag_y == 0:
-                y_start_nodes.append(edge[i][3])
-                y_end_nodes.append(edge[i][4])
+        if edge[i][4]==2:
+            if edge[i][6] == -1:
+                y_start_nodes.append(edge[i][5])
+                y_end_nodes.append(outer_idx[2])
                 y_capacities.append(max_len)
                 y_unit_costs.append(1)
                 y_edge_idx.append(i)
 
-        if edge[i][2]==3:
-            flag_x = 0
-            for j in range(len(x_edge_idx)):
-                s = edge[x_edge_idx[j]][0]
-                e = edge[x_edge_idx[j]][1]
-                if edge[i][0] == e and edge[i][1] == s:
-                    flag_x = 1
-                    break
-            if flag_x == 0:
-                x_start_nodes.append(edge[i][3])
-                x_end_nodes.append(edge[i][4])
+        if edge[i][4]==3:
+            if edge[i][6] == -1:
+                x_start_nodes.append(edge[i][5])
+                x_end_nodes.append(outer_idx[3])
                 x_capacities.append(max_len)
                 x_unit_costs.append(1)
                 x_edge_idx.append(i)
+        
+        
 
-    y_start_nodes.append(face_right)
-    y_end_nodes.append(face_left)
+    y_start_nodes.append(outer_idx[2])
+    y_end_nodes.append(outer_idx[0])
     y_capacities.append(max_len)
     y_unit_costs.append(1)
     #y_edge_idx.append(i)
 
-    x_start_nodes.append(face_up)
-    x_end_nodes.append(face_down)
+    x_start_nodes.append(outer_idx[3])
+    x_end_nodes.append(outer_idx[1])
     x_capacities.append(max_len)
     x_unit_costs.append(1)
     #x_edge_idx.append(i)
@@ -693,7 +891,32 @@ def H_ortho_2_compact_drawing(H_ortho_rec):
         supply_tmp = np.sum((np.array(y_start_nodes)==i)*1.0) - np.sum((np.array(y_end_nodes)==i)*1.0)
         y_supplies[i] = - supply_tmp
 
-    
+    # canvas = np.zeros((256,256,3),np.uint8)
+    # for i in range(len(x_edge_idx)):
+    #     color = (np.random.rand(3)*255).astype(np.uint8).tolist()
+    #     idx = x_edge_idx[i]
+    #     pt1_idx = edge[idx][0]
+    #     pt2_idx = edge[idx][1]
+    #     pt1 = [int(vertex[pt1_idx][1]),int(vertex[pt1_idx][0])]
+    #     pt2 = [int(vertex[pt2_idx][1]),int(vertex[pt2_idx][0])]
+
+    #     cv.line(canvas,pt1,pt2,color,1)
+    # cv.imshow('1',canvas)
+    # #cv.waitKey()
+
+    # for i in range(len(y_edge_idx)):
+    #     idx = y_edge_idx[i]
+    #     pt1_idx = edge[idx][0]
+    #     pt2_idx = edge[idx][1]
+    #     pt1 = [int(vertex[pt1_idx][1]),int(vertex[pt1_idx][0])]
+    #     pt2 = [int(vertex[pt2_idx][1]),int(vertex[pt2_idx][0])]
+
+    #     cv.line(canvas,pt1,pt2,[255,0,255],1)
+
+    # cv.imshow('2',canvas)
+    # cv.waitKey()
+
+
     # x axis
     x_network['start_nodes'] = x_start_nodes
     x_network['end_nodes'] = x_end_nodes
@@ -708,9 +931,17 @@ def H_ortho_2_compact_drawing(H_ortho_rec):
     y_network['supplies'] = y_supplies
     
 
-    x_flow = min_cost_flow_form(x_network)
-    y_flow = min_cost_flow_form(y_network)
+    x_flow,flag_x= min_cost_flow_form(x_network)
+    y_flow,flag_y= min_cost_flow_form(y_network)
     
+    if flag_x==1 or flag_y ==1:
+        return 0,1
+
+    # if flag_x==0:
+    #     return flag_x,flag_x
+    # if flag_y==0:
+    #     return flag_y,flag_y
+    flag = 1
     compact_layout = np.zeros([len(vertex),2])-1
     start_idx = -1
     for i in range(len(vertex)):
@@ -742,50 +973,74 @@ def H_ortho_2_compact_drawing(H_ortho_rec):
             edge_idx = edge_all_idx[i]
             s = edge[edge_idx][0]
             e = edge[edge_idx][1]
-            pos = edge[edge_idx][2]
+            pos = edge[edge_idx][4]
 
             if s in exist_pt and not(e in exist_pt):
                 if pos == 0:
-                    v_new = compact_layout[s,:] + np.array([0,length[i]+1])
-                if pos == 1:
-                    v_new = compact_layout[s,:] + np.array([length[i]+1,0])
-                if pos == 2:
-                    v_new = compact_layout[s,:] - np.array([0, length[i]+1])
-                if pos == 3:
                     v_new = compact_layout[s,:] - np.array([length[i]+1,0])
+                if pos == 1:
+                    v_new = compact_layout[s,:] + np.array([0,length[i]+1])
+                if pos == 2:
+                    v_new = compact_layout[s,:] + np.array([length[i]+1,0])
+                if pos == 3:
+                    v_new = compact_layout[s,:] - np.array([0,length[i]+1])
                 compact_layout[e,:] = v_new
                 exist_pt.append(e)
                 count += 1
             if e in exist_pt and not(s in exist_pt):
                 if pos == 0:
-                    v_new = compact_layout[e,:] - np.array([0,length[i]+1])
-                if pos == 1:
-                    v_new = compact_layout[e,:] - np.array([length[i]+1,0])
-                if pos == 2:
-                    v_new = compact_layout[e,:] + np.array([0, length[i]+1])
-                if pos == 3:
                     v_new = compact_layout[e,:] + np.array([length[i]+1,0])
+                if pos == 1:
+                    v_new = compact_layout[e,:] - np.array([0,length[i]+1])
+                if pos == 2:
+                    v_new = compact_layout[e,:] - np.array([length[i]+1,0])
+                if pos == 3:
+                    v_new = compact_layout[e,:] + np.array([0,length[i]+1])
                 compact_layout[s,:] = v_new
                 exist_pt.append(s)
                 count += 1
 
+    canvas = np.zeros((256,256,3),np.uint8)
 
-    return compact_layout
+    for k in range(len(rooms_com)):
+       
+        color = (np.random.rand(3)*255).astype(np.uint8).tolist()
+        contours = []
+        
+        for j in range(len(rooms_com[k])):
+            idx = rooms_com[k][j]
+            contours.append([int(compact_layout[idx,1]*20),int(compact_layout[idx,0]*20)])
+        contours = np.array(contours)
+        cv.drawContours(canvas, [contours], -1, color, -1)
+        cv.drawContours(canvas, [contours], -1, [0,0,0], 1)
+
+
+    cv.imshow('0',canvas)
+    
+
+    
+    cv.waitKey(10)
+    
+
+
+    return compact_layout,0
 
 
 def planar_room_layout(compact_layout,H_ortho_rec):
+    flag = 0
     x_coor = np.array(H_ortho_rec[0])[:,0]
     x_order = compact_layout[:,0]
-    x_sol = quad_prog(x_coor,x_order,H_ortho_rec[2])
+    x_sol,flag_x = quad_prog(x_coor,x_order,H_ortho_rec[2])
 
     y_coor = np.array(H_ortho_rec[0])[:,1]
     y_order = compact_layout[:,1]
-    y_sol = quad_prog(y_coor,y_order,H_ortho_rec[2])
+    y_sol,flag_y= quad_prog(y_coor,y_order,H_ortho_rec[2])
     
-    
+    if flag_x==1 or flag_y==1:
+        return 0,1
     # outer_rec
     planar_drawings = [x_sol,y_sol]
-    return planar_drawings  
+    return planar_drawings,flag 
 
 def get_color_map():
     color = np.array([
@@ -835,6 +1090,8 @@ def render_plan(planar_drawings,H_ortho_rec,data_json,path):
         thresh = canvas_T[:,:,0]
         contours_2, hierarchy = cv.findContours(thresh, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
         cv.drawContours(canvas, contours_2, -1, [0,0,0], 3)
+    cv.imshow('1',canvas)
+    cv.waitKey(10)
     cv.imwrite(path,canvas)
     return
 
@@ -844,6 +1101,8 @@ from quad_opt import *
 
 if __name__ == '__main__':
     
+
+
     data_json = open('./post_proc/bin/0.json')
     data_json = json.load(data_json) 
     H_ortho_flag = H_ortho_discriminator(data_json) 

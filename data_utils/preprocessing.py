@@ -272,3 +272,7 @@ def main(args):
         f_json = open(out_file,'w')
         f_json.write(data_json)
         f_json.close()
+
+if __name__ == '__main__':
+    args = parse_args()
+    main(args)
