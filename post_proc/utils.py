@@ -141,8 +141,8 @@ def combine_emb_2_network(data_json):
     
     # edge: face <-> face 
     for i in range(len(bubble_edge)):
-        face_u_id = bubble_edge[i][0] + len(vertex) 
-        face_v_id = bubble_edge[i][1] + len(vertex) 
+        face_u_id = range(len(combine_emb))[bubble_edge[i][0]] + len(vertex)
+        face_v_id = range(len(combine_emb))[bubble_edge[i][1]]+ len(vertex)
 
         for j in range(len(dual_edge[2*i])-1):
             ## ->
@@ -326,6 +326,16 @@ def check_json(data_json):
                     count +=1
         if count!=1:
             flag = 1
+    # check face_edge
+
+    for i in range(len(combin_emb)):
+        idx_l = []
+        for j in range(len(combin_emb[i])):
+            if combin_emb[i][j] not in idx_l:
+                idx_l.append(combin_emb[i][j] )
+            else:
+                flag = 1
+
 
     return flag
 
