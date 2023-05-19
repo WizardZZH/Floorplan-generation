@@ -14,6 +14,44 @@ import argparse
 sys.path.append('..')
 from utils import *
 
+def check_com_emb(combin_emb):
+
+    edges = []
+    flag = 0
+    for i in range(len(combin_emb)):
+        for j in range(len(combin_emb[i])):
+            v = combin_emb[i][j]
+            u = combin_emb[i][j-1]
+            edges.append([u,v,-1])
+    for i in range(len(edges)):
+        count = 0
+        u = edges[i][0]
+        v = edges[i][1]
+
+        for j in range(len(edges)):
+            if i!=j:
+                u_1 = edges[j][0]
+                v_1 = edges[j][1] 
+                if u_1==u and v_1==v:
+                    count = 100
+                if u_1==v and v_1==u:
+                    count +=1
+        if count!=1:
+            flag = 1
+    # check face_edge
+
+    for i in range(len(combin_emb)):
+        idx_l = []
+        for j in range(len(combin_emb[i])):
+            if combin_emb[i][j] not in idx_l:
+                idx_l.append(combin_emb[i][j] )
+            else:
+                flag = 1
+
+
+    return flag
+
+
 def parse_args():
     '''PARAMETERS'''
     parser = argparse.ArgumentParser('Net')
@@ -210,6 +248,12 @@ def main(args):
                 k = (k+1)%len(conbinal_embedding[i])
                 if count== len(conbinal_embedding[i])+1:
                     break
+
+        flag_G = check_com_emb(conbinal_embedding)
+        if flag_G==1:
+            with open('error_case_3.txt','a+') as writers:
+                writers.write(name.split('.')[0] + '\n')
+                continue
 
         new_dual_edge =[dual_edge[0]]
         dual_idx = [0]
